@@ -1,0 +1,12 @@
+mixin breads(items)
+    each val,key in items
+            li.breadcrumbs__item
+                a(href="" class="#{key == items.length-1 ? 'active' : '' }").breadcrumbs__link= val
+
+.breadcrumbs
+    .container
+        ul.breadcrumbs__list
+            +breads( ['Главная','Каталог'])
+.maintittle
+    .container
+        h3.maintitle__text Мобильные телефоны

@@ -1,0 +1,60 @@
+include content-list
+.container
+    .content-header
+        .content-header__left
+            form.content-header__form(method="post")
+                .content-header__form-left
+                    label(for="content-header__select").content-header__label-select Сортировать по
+                    select(id="content-header__select",name="content-header__select").content-header__select
+                        option.content-header__select-option по цене
+                        option.content-header__select-option по популярности
+        .content-header__right
+                    p.content-header__right-paragraph Вид каталога
+                    .content-header__list
+                        .content-header__item-info.content-header__item
+                        .content-header__item-thumbs.content-header__item
+                        .content-header__item-list.content-header__item
+    .content-main
+        ul.content-main-list
+            each val in contentItems
+                li.content-main-item
+                    .container
+                        .content-main-item__photo
+                            .content-main-item__photo-main
+                                img(src=contents['image'],alt=contents['name']).content-main-item__photo-main-photo
+                            ul.content-main-item__photo-list
+                                each imagesval,imageskey in contents['images']
+                                    li(class="#{imageskey =='image1' ? 'active' : '' }").content-main-item__photo-item
+                                        img(src=imagesval,alt=imageskey).content-main-item__photo-item-photo
+                        .content-main-item__articul
+                            p.content-main-item__articul-title Артикул
+                            p.content-main-item__articul-val= contents['articul']
+                        .content-main-item__name
+                            p.content-main-item__name-paragraph= contents['name']
+                            p.content-main-item__name-paragraph= contents['name2']
+                        p.content-main-item__info= contents['info']
+                        table.content-main-item__charact-table
+                            each charval,charkey in contents['charact']
+                                tr.content-main-item__charact-item-row
+                                    td.content-main-item__charact-item-prop=charkey
+                                    td.content-main-item__charact-item-val=charval
+                        .content-main-item__ratio
+                            ul.content-main-item__ratio-list
+                                each ratioval,ratiokey in ratio_list
+                                    li.content-main-item__ratio-item(class="#{ratioval <= contents['ratio']? 'active' : '' }")=ratioval
+                            p.content-main-item__ratio-text=contents['ratio']
+                        p.content-main-item__price= contents['price']
+                            span.content-main-item__price-rouble &#8381;
+                        .content-main-item__buy
+                            //span.content-main-item__buy-icon 1
+                            p.content-main-item__buy-presense=contents['presence']
+                            button.content-main-item__buy-button В корзину
+
+
+    .content-footer
+            .content-footer__sel-list
+                .content-footer__sel-item.content-footer__sel-left
+                .content-footer__sel-item.content-footer__sel-0.active 1
+                .content-footer__sel-item.content-footer__sel-1 2
+                .content-footer__sel-item.content-footer__sel-2 3
+                .content-footer__sel-item.content-footer__sel-right

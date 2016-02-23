@@ -1,0 +1,243 @@
+.sprite,
+.header-top-social__link {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.header-top-social__link-fb {
+  width: 6px;
+  height: 12px;
+  left: 9.5px;
+  background-position: -158px -51px;
+  &:hover {
+    background-position: -10px -83px;
+  }
+}
+
+.header-top-social__link-vk {
+  width: 10px;
+  height: 12px;
+  left: 8.5px;
+  background-position: -199px -128px;
+  &:hover {
+    background-position: -199px -160px;
+  }
+}
+
+.header-top-social__link-tw {
+  width: 16px;
+  height: 12px;
+  left: 4.5px;
+  background-position: -55px -163px;
+  &:hover{
+    background-position: -91px -163px;
+  }
+}
+
+.header-top__phone-link:before,
+.header-top__adress-paragraph:before {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 16px;
+}
+
+.header-top__phone-link:before{
+  top: 6px;
+  left: -18px;
+  background-position: -68px -83px;
+}
+.header-top__adress-paragraph:before {
+  top: 3px;
+  left: -18px;
+  background-position: -36px -83px;
+}
+
+//сайдбар заголовок фильтра - стрелочка вверх
+.sidebar__item-header:after {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 18px;
+  height: 11px;
+  background-position: -133px -10px;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+//если добавили класс то картинка другая
+.sidebar__item-header.down:after {
+  width: 18px;
+  height: 11px;
+  background-position: -43px -10px;
+}
+
+.sidebar__item-presence_label:before,
+.sidebar__item-brands_label:before,
+.sidebar__item-platform_label:before{
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+}
+.sidebar__item-presence_label:before {
+  background-position: -158px -83px;
+}
+.sidebar__item-presence_label.checked:before {
+  background-position: -10px -122px;
+}
+.sidebar__item-brands_label:before,
+.sidebar__item-platform_label:before{
+  background-position: -10px -41px;
+}
+.sidebar__item-brands_label.checked:before,
+.sidebar__item-platform_label.checked:before{
+  background-position: -49px -41px;
+}
+.sidebar__item-brands_label.hover:before
+.sidebar__item-platform_label.hover:before{  //class hover будем добавлять в Js
+  background-position: -88px -41px;
+}
+
+.sidebar__item-price-slider-inner:before,
+.sidebar__item-price-slider-inner:after{
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 14px;
+  background-position: -126px -122px;
+  cursor: pointer;
+}
+.sidebar__item-price-slider-inner:before {
+  left: -4px;
+
+}
+.sidebar__item-price-slider-inner:after {
+  right: -4px;
+}
+
+
+.footer-right__social-link {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 11px;
+  &.fb{
+    width: 11px;
+    height : 21px;
+    left: 16px;
+    background-position: -171px -10px;
+    &:hover {
+      background-position: -127px -51px;
+    }
+  }
+  &.tw {
+    left: 8px;
+    width: 25px;
+    height: 21px;
+    background-position: -154px -122px;
+    &:hover {
+      background-position: -10px -163px;
+    }
+  }
+  &.vk {
+    width: 16px;
+    height: 21px;
+    left: 14px;
+    background-position: -202px -46px;
+  }
+  &:hover {
+    background-position: -199px -87px;
+}
+}
+
+.content-header__form-left:after {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 21px;
+  right: 6px;
+  width: 13px;
+  height: 9px;
+  background-position: -10px -10px;
+}
+
+
+.content-header__item:before {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  left: 16px;
+}
+.content-header__item-info:before {
+  background-position: -163px -163px;
+}
+.content-header__item-thumbs:before {
+  background-position: -202px -10px;
+}
+.content-header__item-list:before {
+  background-position: -127px -163px;
+}
+
+
+
+.content-footer__sel-left:after,
+.content-footer__sel-right:after {
+  width: 6px;
+  height: 9px;
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+.content-footer__sel-left:after  {
+  background-position: -81px -10px;
+}
+.content-footer__sel-right:after {
+  background-position: -107px -10px;
+}
+
+.content-main-item__ratio-item {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 21px;
+  height: 20px;
+  background-position: -85px -122px;
+  &.active {
+    width: 16px;
+    height: 15px;
+    background-position: -49px -122px;
+  }
+}
+
+
+
+

@@ -1,0 +1,25 @@
+- var socials = {'fb':'fb.com','vk':'vk.com','tw':'tw.com'}
+- var topselect=['Планшеты','Мобильные телефоны','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника']
+doctype
+html
+    head
+        include common/head
+    body
+        .wrapper
+            .maincontent
+                include  common/header
+                include  common/breadcrumbs
+                .mainarticle
+                    .content-top
+                        //-  далее части для разных страниц сайта
+                        block index
+                    .container
+                        block important
+            .wrapper-empty
+        include common/footer2
+
+
+
+
+
+

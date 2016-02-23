@@ -1,0 +1,88 @@
+$footer-text-color: white;
+
+
+.footer {
+  width: $mainwidth;
+  background: url("../images/footer.png") no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  color: $footer-text-color;
+}
+
+.footer-top {
+  @include clearfix;
+}
+.footer-logo {
+  display: block;
+  float: left;
+  margin-top: 70px;
+  margin-left: 80px;
+    &__link {
+    color: $footer-text-color;
+    font-family: MyriadProBold;
+    font-size: 34px;
+      text-decoration: none;
+  }
+}
+.footer-right {
+  display: block;
+  float: right;
+  width: 650px;
+}
+.footer-right__top {
+  @include clearfix;
+}
+.footer-right__social {
+  &-list {
+    margin: 28px $marginmain 28px 0;
+    float: right;
+  }
+  &-item {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin-left: 25px;
+    width: 44px;
+    height: 44px;
+    font-size: 0;
+    @include border-radius(50%);
+    background-color: $footer-text-color;
+  }
+  &-link {
+   padding: 10px;
+
+  }
+}
+.footer-right__select {
+  &-list {
+    text-align: right;
+    margin-right: $marginmain;
+  }
+  &-item {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 20px 20px;
+  }
+  &-link {
+    color: $footer-text-color;
+    font-size: 14px;
+    font-family: OpenSansRegular;
+
+  }
+}
+
+.footer-bottom {
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  bottom: 0;
+  //  margin: 0 auto;
+  border-top: 2px solid #494949;
+  &__copyright {
+    margin: 9px auto 0 auto;
+    font-family: OpenSansRegular;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+

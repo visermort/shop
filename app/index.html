@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Интернет магазин</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="maincontent">
+				<header class="header">
+					<div class="header-top-container">
+						<div class="header-top">
+							<div class="header-top-social">
+								<ul class="header-top-social__list">
+									<li class="header-top-social__item"><a href="fb.com" class="header-top-social__link-fb header-top-social__link">fb</a></li>
+									<li class="header-top-social__item"><a href="vk.com" class="header-top-social__link-vk header-top-social__link">vk</a></li>
+									<li class="header-top-social__item"><a href="tw.com" class="header-top-social__link-tw header-top-social__link">tw</a></li>
+								</ul>
+							</div>
+							<div class="header-top__phone"><a href="tel:+79111231213" class="header-top__phone-link">+7 (911) 123-12-13</a></div>
+							<div class="header-top__adress">
+								<p class="header-top__adress-paragraph">ул. Маяковская 6, офис 17</p>
+							</div>
+						</div>
+					</div>
+					<div class="header-bottom-container">
+						<div class="header-bottom">
+							<div class="header-bottom-logo"><a href="/" class="header-bottom-logo__link">COOLTECH</a></div>
+							<div class="header-bottom-search">
+								<input type="text" name="header-bottom__search" placeholder="Что будем искать" class="header-bottom-search__text">
+								<input type="submit" name="header-bottom__submit" value="Найти" class="header-bottom-search__submit">
+							</div>
+							<div class="header-bottom-nav">
+								<ul class="header-bottom-nav__list">
+									<li class="header-bottom-nav__item"><a href="#" class="active header-bottom-nav__link">Карта проезда</a></li>
+									<li class="header-bottom-nav__item"><a href="#" class="header-bottom-nav__link">История заказов</a></li>
+									<li class="header-bottom-nav__item"><a href="#" class="header-bottom-nav__link">Корзина</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="nav">
+					<div class="nav-container">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#" class="nav__link">Планшеты</a></li>
+							<li class="nav__item"><a href="#" class="active nav__link">Мобильные телефоны</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Мр3 плееры</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Персональные компьютеры</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Ноутбуки</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Аксессуары</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+											<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+											<li class="breadcrumbs__item"><a href="" class="active breadcrumbs__link">Каталог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="maintittle">
+					<div class="container">
+						<h3 class="maintitle__text">Мобильные телефоны</h3>
+					</div>
+				</div>
+				<div class="mainarticle">
+					<div class="content-top">
+						<div class="sidebar">
+							<div class="container">
+								<div class="sidebar__type">
+									<ul class="sidebar__type-list">
+										<li class="sidebar__type-item"><a href="#" class="sidebar__type-link flagman active">Флагманы</a></li>
+										<li class="sidebar__type-item"><a href="#" class="sidebar__type-link budjet">Бюджетная линейка</a></li>
+									</ul>
+								</div>
+								<form method="post" name="formsidebar" id="formsidebar" class="sidebar__form">
+									<ul class="sidebar__list">
+										<li class="sidebar__item-presence sidebar-item">
+											<p class="sidebar__item-header">Наличие в магазинах</p>
+											<ul class="sidebar__item-presence-list">
+												<li class="sidebar__item-presence-item">
+													<input type="radio" id="presence_radio_all" name="presence_radio_all" hidden checked class="sidebar__item-presence_radio presence-all checked">
+													<label for="presence_radio_all" class="sidebar__item-presence_label checked">Во всех магазинах</label>
+												</li>
+												<li class="sidebar__item-presence-item">
+													<input type="radio" id="presence_radio_niarest" name="presence_radio_niarest" hidden class="sidebar__item-presence_radio prsence-nearest">
+													<label for="presence_radio_niarest" class="sidebar__item-presence_label">В ближайшем ко мне магазине</label>
+												</li>
+											</ul>
+										</li>
+										<li class="sidebar__item-brands sidebar-item">
+											<p class="sidebar__item-header">Бренды</p>
+											<ul class="sidebar__item-brand-list">
+												<li class="sidebar__item-brands-item">
+													<input type="checkbox" id="sidebar__item-brands_lenovo" name="checkbox-brand" class="sidebar__item-brands_lenovo sidebar__item-brands-input">
+													<label for="sidebar__item-brands_lenovo" class="checked sidebar__item-brands_label">Lenovo</label>
+												</li>
+												<li class="sidebar__item-brands-item">
+													<input type="checkbox" id="sidebar__item-brands_apple" name="checkbox-brand" class="sidebar__item-brands_apple sidebar__item-brands-input">
+													<label for="sidebar__item-brands_apple" class="checked sidebar__item-brands_label">Apple</label>
+												</li>
+												<li class="sidebar__item-brands-item">
+													<input type="checkbox" id="sidebar__item-brands_samsung" name="checkbox-brand" class="sidebar__item-brands_samsung sidebar__item-brands-input">
+													<label for="sidebar__item-brands_samsung" class="checked sidebar__item-brands_label">Samsung</label>
+												</li>
+												<li class="sidebar__item-brands-item">
+													<input type="checkbox" id="sidebar__item-brands_asus" name="checkbox-brand" class="sidebar__item-brands_asus sidebar__item-brands-input">
+													<label for="sidebar__item-brands_asus" class="sidebar__item-brands_label">Asus</label>
+												</li>
+												<li class="sidebar__item-brands-item">
+													<input type="checkbox" id="sidebar__item-brands_motorola" name="checkbox-brand" class="sidebar__item-brands_motorola sidebar__item-brands-input">
+													<label for="sidebar__item-brands_motorola" class="sidebar__item-brands_label">Motorola</label>
+												</li>
+											</ul>
+											<p class="sidebar__item-bottom">Сбросить фильтр</p>
+										</li>
+										<li class="sidebar__item-price sidebar-item">
+											<p class="sidebar__item-header">Цена</p>
+											<label for="price-text-start" class="sidebar__item-price_label label-start">от</label>
+											<input type="text" id="price-text-start" name="price-text-start" placeholder="100" class="sidebar__item-price-input price_start">
+											<label for="price-text-finish" class="sidebar__item-price_label label-finish">до</label>
+											<input type="text" id="price-text-finish" name="price-text-finish" placeholder="13 000" class="sidebar__item-price-input price_from">
+											<div class="sidebar__item-price-slider">
+												<p class="sidebar__item-price-slider-inner">цена</p>
+											</div>
+										</li>
+										<li class="sidebar__item-colors sidebar-item">
+											<p class="sidebar__item-header">Цвет</p>
+											<ul class="sidebar__item-colors-list">
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-white  ">white</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-gray active ">gray</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-black  ">black</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-dark-blue  ">dark-blue</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-red  ">red</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-yellow  ">yellow</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-orange  ">orange</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-green  ">green</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-blue  ">blue</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-violet  ">violet</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-pink  ">pink</div>
+												</li>
+												<li class="sidebar__item-colors-item">
+													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+													<div class="sidebar__item-colors_button button-brown  ">brown</div>
+												</li>
+											</ul>
+										</li>
+										<li class="sidebar__item-platform sidebar-item">
+											<p class="sidebar__item-header">Операционные системы</p>
+											<ul class="sidebar__item-platform-list">
+												<li class="sidebar__item-platform-item">
+													<input type="checkbox" id="sidebar__item-platform_android" name="checkbox-platform" class="sidebar__item-platform_android sidebar__item-platform_check">
+													<label for="sidebar__item-platform_android" class="checked sidebar__item-platform_label">Android</label>
+												</li>
+												<li class="sidebar__item-platform-item">
+													<input type="checkbox" id="sidebar__item-platform_ios" name="checkbox-platform" class="sidebar__item-platform_ios sidebar__item-platform_check">
+													<label for="sidebar__item-platform_ios" class="checked sidebar__item-platform_label">IOS</label>
+												</li>
+												<li class="sidebar__item-platform-item">
+													<input type="checkbox" id="sidebar__item-platform_windows-mobile" name="checkbox-platform" class="sidebar__item-platform_windows-mobile sidebar__item-platform_check">
+													<label for="sidebar__item-platform_windows-mobile" class="checked sidebar__item-platform_label">Windows Mobile</label>
+												</li>
+												<li class="sidebar__item-platform-item">
+													<input type="checkbox" id="sidebar__item-platform_symbian" name="checkbox-platform" class="sidebar__item-platform_symbian sidebar__item-platform_check">
+													<label for="sidebar__item-platform_symbian" class="sidebar__item-platform_label">Symbian</label>
+												</li>
+												<li class="sidebar__item-platform-item">
+													<input type="checkbox" id="sidebar__item-platform_custom" name="checkbox-platform" class="sidebar__item-platform_custom sidebar__item-platform_check">
+													<label for="sidebar__item-platform_custom" class="sidebar__item-platform_label">Custom</label>
+												</li>
+											</ul>
+											<p class="sidebar__item-bottom">Сбросить фильтр</p>
+										</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+						<div class="article">
+							<div class="container">
+								<div class="content-header">
+									<div class="content-header__left">
+										<form method="post" class="content-header__form">
+											<div class="content-header__form-left">
+												<label for="content-header__select" class="content-header__label-select">Сортировать по</label>
+												<select id="content-header__select" name="content-header__select" class="content-header__select">
+													<option class="content-header__select-option">по цене</option>
+													<option class="content-header__select-option">по популярности</option>
+												</select>
+											</div>
+										</form>
+									</div>
+									<div class="content-header__right">
+										<p class="content-header__right-paragraph">Вид каталога</p>
+										<div class="content-header__list">
+											<div class="content-header__item-info content-header__item"></div>
+											<div class="content-header__item-thumbs content-header__item"></div>
+											<div class="content-header__item-list content-header__item"></div>
+										</div>
+									</div>
+								</div>
+								<div class="content-main">
+									<ul class="content-main-list">
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+										<li class="content-main-item">
+											<div class="container">
+												<div class="content-main-item__photo">
+													<div class="content-main-item__photo-main"><img src="images/phone1.jpg" alt="Samsung GT-I9301I " class="content-main-item__photo-main-photo"></div>
+													<ul class="content-main-item__photo-list">
+														<li class="active content-main-item__photo-item"><img src="images/phone1.jpg" alt="image1" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone2.jpg" alt="image2" class="content-main-item__photo-item-photo"></li>
+														<li class="content-main-item__photo-item"><img src="images/phone3.jpg" alt="image3" class="content-main-item__photo-item-photo"></li>
+													</ul>
+												</div>
+												<div class="content-main-item__articul">
+													<p class="content-main-item__articul-title">Артикул</p>
+													<p class="content-main-item__articul-val">128789</p>
+												</div>
+												<div class="content-main-item__name">
+													<p class="content-main-item__name-paragraph">Samsung GT-I9301I </p>
+													<p class="content-main-item__name-paragraph">SALAXY S3</p>
+												</div>
+												<p class="content-main-item__info">Больше возможностей со смартфоно Смартфон поставляется с актуальными обновлениями приложений и незаменимыми сервисами Microsoft — Skype, Office и OneDrive — предустановленными и готовыми к использованию. Купите его, и вы получите устройство, обладающее качествами дорогостоящих смартфонов премиум-сегмента, по доступной цене. Сделано надежно Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Lumia 430 Dual SIM удобный компактный корпус из поликарбоната — материала, способного выдержать любые испытания судьбы.</p>
+												<table class="content-main-item__charact-table">
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Тип SIM-карты</td>
+														<td class="content-main-item__charact-item-val">Micro-SIM</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Количество SIM-карт</td>
+														<td class="content-main-item__charact-item-val">1</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Цвет</td>
+														<td class="content-main-item__charact-item-val">Белый</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">ОС</td>
+														<td class="content-main-item__charact-item-val">Android</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">Связь 3G</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">4G(LTE)</td>
+														<td class="content-main-item__charact-item-val">Нет</td>
+													</tr>
+													<tr class="content-main-item__charact-item-row">
+														<td class="content-main-item__charact-item-prop">GPS-модуль</td>
+														<td class="content-main-item__charact-item-val">Есть</td>
+													</tr>
+												</table>
+												<div class="content-main-item__ratio">
+													<ul class="content-main-item__ratio-list">
+														<li class="content-main-item__ratio-item active">1</li>
+														<li class="content-main-item__ratio-item active">2</li>
+														<li class="content-main-item__ratio-item active">3</li>
+														<li class="content-main-item__ratio-item active">4</li>
+														<li class="content-main-item__ratio-item">5</li>
+													</ul>
+													<p class="content-main-item__ratio-text">4</p>
+												</div>
+												<p class="content-main-item__price">11 343<span class="content-main-item__price-rouble">&#8381;</span></p>
+												<div class="content-main-item__buy">
+													<!--span.content-main-item__buy-icon 1-->
+													<p class="content-main-item__buy-presense">В наличии</p>
+													<button class="content-main-item__buy-button">В корзину</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="content-footer">
+									<div class="content-footer__sel-list">
+										<div class="content-footer__sel-item content-footer__sel-left"></div>
+										<div class="content-footer__sel-item content-footer__sel-0 active">1</div>
+										<div class="content-footer__sel-item content-footer__sel-1">2</div>
+										<div class="content-footer__sel-item content-footer__sel-2">3</div>
+										<div class="content-footer__sel-item content-footer__sel-right"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="important">
+							<h3 class="important__title">Важная информация</h3>
+							<div class="important__text">
+								<p class="important_text_unit">Элемент политического процесса, однако, вызывает онтологический христианско-демократический национализм. Социальная парадигма фактически определяет теоретический континентально-европейский тип политической культуры. Понятие тоталитаризма последовательно. В таких странах, как Мексика и Венесуэла, понятие тоталитаризма отражает тоталитарный тип политической культуры. Бихевиоризм означает институциональный коммунизм.</p>
+								<p class="important_text_unit">Капиталистическое мировое общество, тем более в условиях социально-экономического кризиса, отражает прагматический феномен толпы. Референдум, несмотря на внешние воздействия, приводит плюралистический коммунизм. Понятие политического участия самопроизвольно. Понятие политического конфликта, как бы это ни казалось парадоксальным, доказывает доиндустриальный тип политической культуры. Политическое учение Руссо существенно символизирует политический процесс в современной России. Политическое учение Августина, с другой стороны, практически доказывает субъект политического процесса.</p>
+								<p class="important_text_unit">Феномен толпы, короче говоря, сохраняет феномен толпы. Политическое учение Фомы Аквинского сохраняет кризис легитимности, такого мнения придерживаются многие депутаты Государственной Думы. Как писал С.Хантингтон, феномен толпы интегрирует социализм. Еще Шпенглер в "Закате Европы" писал, что элемент политического процесса важно формирует антропологический элемент политического процесса, говорится в докладе ОБСЕ. Политическая психология интегрирует гуманизм. Механизм власти, с другой стороны, традиционен.</p>
+								<p class="important_text_unit">Элемент политического процесса, однако, вызывает онтологический христианско-демократический национализм. Социальная парадигма фактически определяет теоретический континентально-европейский тип политической культуры. Понятие тоталитаризма последовательно. В таких странах, как Мексика и Венесуэла, понятие тоталитаризма отражает тоталитарный тип политической культуры. Бихевиоризм означает институциональный коммунизм.</p>
+								<p class="important_text_unit">Капиталистическое мировое общество, тем более в условиях социально-экономического кризиса, отражает прагматический феномен толпы. Референдум, несмотря на внешние воздействия, приводит плюралистический коммунизм. Понятие политического участия самопроизвольно. Понятие политического конфликта, как бы это ни казалось парадоксальным, доказывает доиндустриальный тип политической культуры. Политическое учение Руссо существенно символизирует политический процесс в современной России. Политическое учение Августина, с другой стороны, практически доказывает субъект политического процесса.</p>
+								<p class="important_text_unit">Феномен толпы, короче говоря, сохраняет феномен толпы. Политическое учение Фомы Аквинского сохраняет кризис легитимности, такого мнения придерживаются многие депутаты Государственной Думы. Как писал С.Хантингтон, феномен толпы интегрирует социализм. Еще Шпенглер в "Закате Европы" писал, что элемент политического процесса важно формирует антропологический элемент политического процесса, говорится в докладе ОБСЕ. Политическая психология интегрирует гуманизм. Механизм власти, с другой стороны, традиционен.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-empty"></div>
+		</div>
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="footer-logo"><a href="/" class="footer-logo__link">COOLTECH</a></div>
+					<div class="footer-right">
+						<div class="footer-right__top">
+							<ul class="footer-right__social-list">
+								<li class="footer-right__social-item"><a href="fb.com" class="fb footer-right__social-link">fb</a></li>
+								<li class="footer-right__social-item"><a href="vk.com" class="vk footer-right__social-link">vk</a></li>
+								<li class="footer-right__social-item"><a href="tw.com" class="tw footer-right__social-link">tw</a></li>
+							</ul>
+						</div>
+						<ul class="footer-right__select-list">
+							<li class="footer-right__select-item"><a href="#" class="acitve footer-right__select-link">Планшеты</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Мобильные телефоны</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Мр3 плееры</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Персональные компьютеры</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Ноутбуки</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Аксессуары</a></li>
+							<li class="footer-right__select-item"><a href="#" class="footer-right__select-link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<p class="footer-bottom__copyright">All rights reserved. 2015. no copy alowed</p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="bower/jquery/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

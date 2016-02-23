@@ -1,0 +1,26 @@
+{
+  "name": "shop",
+  "authors": [
+    "visermort <oxygenn@list.ru>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-strings": "normalize#^1.0.4",
+    "modernizr": "2.8.3",
+    "jquery": "~1.8.0",
+    "bPopup": "bpopup#~0.11.0",
+    "blueimp-file-upload": "jquery-file-upload#~9.11.2"
+  }
+}

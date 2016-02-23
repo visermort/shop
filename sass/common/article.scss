@@ -1,0 +1,282 @@
+.content-top {
+  @include clearfix;
+}
+
+.article {
+  display: block;
+  float: right;
+  width: 744px;
+}
+.content-main-list{
+  margin: 0;
+  padding: 0;
+}
+
+.content-header {
+  background-color: $color-article-top;
+  @include clearfix;
+  @include border-radius (6px);
+  color: $color-article-top-font;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  border: 1px solid $color-border;
+  margin-bottom: 18px;
+  &__form-left {
+    position: relative;
+  }
+  &__left {
+    float: left;
+  }
+  &__label-select {
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+  &__select {
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 143px;
+    height: 28px;
+    @include border-radius(3px);
+    background-color: $topcolor;
+    -webkit-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+    -moz-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+    box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+    border: solid 1px $boxshadow;
+    color: $color-article-top-input-font;
+    font-family: OpenSansLignt;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
+  }
+  &__right {
+    float: right;
+  }
+  &__item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: -4px;
+    border-left: 1px solid $color-border;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-nav-hover;
+    }
+  }
+  &__list {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+}
+.content-header__right-paragraph {
+  float: left;
+  margin-right: 15px;
+}
+
+.content-main {
+  margin-bottom: 60px;
+  margin-left: -16px;
+  font-color: $textcolor;
+  &-item {
+    background-color: #fbfbfb;
+    display: inline-block;
+    width: 234px;
+    border: 2px solid #dee1e4;
+    overflow: hidden;
+    @include border-radius(6px);
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    padding: 19px 10px;
+    &__photo-main {
+      width: 134px;
+      height: 134px;
+      background-color: $color-input;
+      margin: 17px auto 10px;
+      border: 1px solid $color-border;
+      @include border-radius(2px);
+      margin-bottom: 15px;
+      &-photo {
+        height: 124px;
+        margin: 5px 20px;
+      }
+    }
+    &__photo-list {
+      margin-left: 36px;
+      margin-bottom: 15px;
+    }
+    &__photo-item {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-color: $color-input;
+      border: 1px solid $color-border;
+      @include border-radius(2px);
+      margin-right: 13px;
+      &.active {
+        border-color: $color-orange;
+      }
+      &-photo {
+        height: 28px;
+        margin: 2px 5px;
+      }
+    }
+    &__articul {
+      display: none;
+    }
+    &__name {
+      font-family: OpenSansSemibold;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 3px;
+      &-paragraph {
+        overflow: hidden;
+        text-overflow: clip;
+        margin : 0;
+        padding: 0;
+      }
+    }
+    &__info {
+      display: none;
+    }
+    &__charact-table {
+      font-family: MyriadProRegular;
+      font-size: 14px;
+    }
+    &__charact-item-prop {
+      text-align: left;
+    }
+    &__charact-item-val {
+      text-align: right;
+    }
+    &__charact-table {
+      width: 100%;
+    }
+    &__charact-item-row {
+      height: 20px;
+      &:nth-child(2n+1) {
+        background-color: $color-table-2x1;
+      }
+    }
+    &__ratio {
+      margin-left: 36px;
+      margin-bottom: 10px;
+      @include clearfix;
+    }
+    &__ratio-list {
+      float:left;
+    }
+    &__ratio-item {
+      display: inline-block;
+      margin-right: 0;
+      font-size: 0;
+    }
+    &__ratio-text {
+      display: block;
+      width: 25px;
+      height: 16px;
+      @include border-radius(8px);
+      background-color: #b5beca;
+      font-family : OpenSansSemibold;
+      font-size: 11px;
+      color: $color-input;
+      margin-left: 8px;
+      float: left;
+      padding-left: 10px;
+      margin-top: 15px;
+      box-sizing: border-box;
+    }
+    &__price {
+      color: $textcolor;
+      font-family : OpenSansSemibold;
+      font-size: 20px;
+      text-align:center;
+      margin-top: 0;
+      margin-bottom: 2px;
+    }
+    &__price-rouble {
+      font-family: Rouble;
+      font-size: 22px;
+      margin-left: 5px;
+    }
+    &__buy {
+      @include clearfix;
+      &-presense {
+        float: left;
+        color: $color-article-top-input-font;
+        font-family: OpenSansSemibold;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        position: relative;
+        &:before {
+          content: " ";
+          display: block;
+          background-color: #60ac49;
+          width: 7px;
+          height: 7px;
+          @include border-radius(50%);
+          left: -15px;
+          top: 5px;
+          float: left;
+          position: absolute;
+        }
+      }
+      &-button {
+        float: right;
+        width: 103px;
+        height: 33px;
+        @include border-radius(5px);
+        background-color: $color-orange;
+        font-family: OpenSansBold;
+        font-size: 14px;
+        color: $color-input-sidebar;
+      }
+    }
+    &:hover {
+      @include box-shadow-all(0, 0, 4px, 2px, 212, 212, 212, 0.6);
+    }
+  }
+}
+
+
+
+
+.content-footer {
+  @include clearfix;
+}
+.content-footer__sel-list {
+  display: block;
+  float: right;
+  font-family: OpenSansBold;
+  font-size: 12px;
+  color: $color-article-top-input-font;
+}
+.content-footer__sel-item {
+  float:left;
+  display: inline-block;
+  background-color: $color-input;
+  width: 24px;
+  height: 24px;
+  @include border-radius(3px);
+  margin-left: 5px;
+  border: 1px solid $color-border;
+  cursor: pointer;
+  padding-top: 3px;
+  padding-left: 8px;
+  box-sizing: border-box;
+  position: relative;
+  &:hover {
+    background-color: #fcfcfc;
+    border-color: #aeaeae;
+    @include box-shadow-all(0px, 1px, 1px, 0px, 0 ,0 ,0, 0.15);
+  }
+}
+.content-footer__sel-list .active {
+  background-color: #e0e0e0;
+  border-color: #aeaeae;
+  @include box-shadow-all(0px, 1px, 1px, 0px, 0 ,0 ,0, 0.15);
+}

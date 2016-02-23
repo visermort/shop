@@ -1,0 +1,35 @@
+- var topnav = [ 'Карта проезда' , 'История заказов' , 'Корзина' ]
+
+
+header.header
+    .header-top-container
+        .header-top
+            .header-top-social
+                ul.header-top-social__list
+                    each value,key in socials
+                        li.header-top-social__item
+                            a(href=value,class="header-top-social__link-#{key}").header-top-social__link= key
+
+            .header-top__phone
+                a.header-top__phone-link(href="tel:+79111231213") +7 (911) 123-12-13
+            .header-top__adress
+                    p.header-top__adress-paragraph ул. Маяковская 6, офис 17
+    .header-bottom-container
+        .header-bottom
+            .header-bottom-logo
+                a(href="/").header-bottom-logo__link COOLTECH
+            .header-bottom-search
+                input(type="text" name="header-bottom__search" placeholder="Что будем искать").header-bottom-search__text
+                input(type="submit" name="header-bottom__submit" value="Найти").header-bottom-search__submit
+            .header-bottom-nav
+                ul.header-bottom-nav__list
+                    each value,key in topnav
+                        li.header-bottom-nav__item
+                            a(href="#" class="#{key == 0 ? 'active' : '' }").header-bottom-nav__link= value
+.nav
+    .nav-container
+        ul.nav__list
+            each value,key in topselect
+                li.nav__item
+                    a(href="#" class="#{key == 1 ? 'active' : '' }").nav__link= value
+
