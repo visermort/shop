@@ -78,9 +78,9 @@
   background-position: -43px -10px;
 }
 
+//radio checkbox
 .sidebar__item-presence_label:before,
-.sidebar__item-brands_label:before,
-.sidebar__item-platform_label:before{
+.sidebar__item-label-checkbox:before{
   background-image: url(../images/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
@@ -91,22 +91,21 @@
   width: 19px;
   height: 19px;
 }
+//radio
 .sidebar__item-presence_label:before {
   background-position: -158px -83px;
 }
 .sidebar__item-presence_label.checked:before {
   background-position: -10px -122px;
 }
-.sidebar__item-brands_label:before,
-.sidebar__item-platform_label:before{
+//checkbox - три состояния
+.sidebar__item-label-checkbox:before{
   background-position: -10px -41px;
 }
-.sidebar__item-brands_label.checked:before,
-.sidebar__item-platform_label.checked:before{
+.sidebar__item-label-checkbox.checked:before{
   background-position: -49px -41px;
 }
-.sidebar__item-brands_label.hover:before
-.sidebar__item-platform_label.hover:before{  //class hover будем добавлять в Js
+.sidebar__item-label-checkbox.hover:before{  //class hover будем добавлять в Js
   background-position: -88px -41px;
 }
 

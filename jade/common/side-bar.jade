@@ -21,46 +21,54 @@
                 a(href="#").sidebar__type-link.flagman.active Флагманы
             li.sidebar__type-item
                 a(href="#").sidebar__type-link.budjet Бюджетная линейка
-    form(method="post",name="formsidebar",id="formsidebar").sidebar__form
+    form(method="post",name="formsidebar",id="formsidebar",action="").sidebar__form
         ul.sidebar__list
             li.sidebar__item-presence.sidebar-item
                 p.sidebar__item-header Наличие в магазинах
-                ul.sidebar__item-presence-list
-                    li.sidebar__item-presence-item
-                        input(type="radio" id="presence_radio_all" name="presence_radio_all" hidden checked).sidebar__item-presence_radio.presence-all.checked
-                        label(for="presence_radio_all").sidebar__item-presence_label.checked Во всех магазинах
-                    li.sidebar__item-presence-item
-                        input(type="radio" id="presence_radio_niarest" name="presence_radio_niarest" hidden ).sidebar__item-presence_radio.prsence-nearest
-                        label(for="presence_radio_niarest").sidebar__item-presence_label В ближайшем ко мне магазине
+                .sidebar__item-block
+                    ul.sidebar__item-presence-list
+                        li.sidebar__item-presence-item
+                            input(type="radio" id="presence_radio_all" name="presence_radio_all" hidden checked).sidebar__item-presence_radio.presence-all.checked
+                            label(for="presence_radio_all").sidebar__item-presence_label.checked Во всех магазинах
+                        li.sidebar__item-presence-item
+                            input(type="radio" id="presence_radio_niarest" name="presence_radio_niarest" hidden ).sidebar__item-presence_radio.prsence-nearest
+                            label(for="presence_radio_niarest").sidebar__item-presence_label В ближайшем ко мне магазине
             li.sidebar__item-brands.sidebar-item
                 p.sidebar__item-header Бренды
-                ul.sidebar__item-brand-list
-                    each item,key in brands
-                        li.sidebar__item-brands-item
-                            input(type="checkbox", id="sidebar__item-brands_#{key}", name="checkbox-brand", class="sidebar__item-brands_#{key}").sidebar__item-brands-input
-                            label(for="sidebar__item-brands_#{key}", class="#{(key=='lenovo') || (key=='samsung') || (key=='apple') ? 'checked' : '' }").sidebar__item-brands_label= item
-                p.sidebar__item-bottom Сбросить фильтр
+                .sidebar__item-block
+                    ul.sidebar__item-brand-list
+                        each item,key in brands
+                            li.sidebar__item-item-checkbox
+                                input(type="checkbox", id="sidebar__item-brands_#{key}", name="checkbox-brand", class="sidebar__item-brands_#{key}",
+                                  checked="#{(key=='lenovo') || (key=='samsung') || (key=='apple') ? 'checked' : '' }").sidebar__item-input-checkbox
+                                label(for="sidebar__item-brands_#{key}", class="#{(key=='lenovo') || (key=='samsung') || (key=='apple') ? 'checked' : '' }").sidebar__item-label-checkbox= item
+                    p.sidebar__item-bottom Сбросить фильтр
             li.sidebar__item-price.sidebar-item
                 p.sidebar__item-header Цена
-                label(for="price-text-start").sidebar__item-price_label.label-start от
-                input(type="text",id="price-text-start",name="price-text-start",placeholder="100").sidebar__item-price-input.price_start
-                label(for="price-text-finish").sidebar__item-price_label.label-finish до
-                input(type="text",id="price-text-finish",name="price-text-finish",placeholder="13 000").sidebar__item-price-input.price_from
-                .sidebar__item-price-slider
-                    p.sidebar__item-price-slider-inner цена
+                .sidebar__item-block
+                    label(for="price-text-start").sidebar__item-price_label.label-start от
+                    input(type="text",id="price-text-start",name="price-text-start",placeholder="100").sidebar__item-price-input.price_start
+                    label(for="price-text-finish").sidebar__item-price_label.label-finish до
+                    input(type="text",id="price-text-finish",name="price-text-finish",placeholder="13 000").sidebar__item-price-input.price_from
+                    .sidebar__item-price-slider
+                        p.sidebar__item-price-slider-inner цена
+                    .sidebar__item-price-ui-slider(id="sidebar__item-price-ui-slider")
             li.sidebar__item-colors.sidebar-item
                 p.sidebar__item-header Цвет
-                ul.sidebar__item-colors-list
-                    each item,key in colors
-                        li.sidebar__item-colors-item
-                            //.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item
-                            .sidebar__item-colors_button(class="button-#{item} #{item == 'gray' ? 'active' : ''} ")= item
+                .sidebar__item-block
+                    ul.sidebar__item-colors-list
+                        each item,key in colors
+                            li.sidebar__item-colors-item
+                                //.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item
+                                .sidebar__item-colors_button(class="button-#{item} #{item == 'gray' ? 'active' : ''} ")= item
             li.sidebar__item-platform.sidebar-item
                 p.sidebar__item-header Операционные системы
-                ul.sidebar__item-platform-list
-                    each item,key in platform
-                        li.sidebar__item-platform-item
-                            input(type="checkbox",id="sidebar__item-platform_#{key}", name="checkbox-platform", class="sidebar__item-platform_#{key}").sidebar__item-platform_check= item
-                            label(for="sidebar__item-platform_#{key}",class="#{key=='android' || key=='ios' || key=='windows-mobile' ? 'checked' : '' }").sidebar__item-platform_label= item
-                p.sidebar__item-bottom Сбросить фильтр
+                .sidebar__item-block
+                    ul.sidebar__item-platform-list
+                        each item,key in platform
+                            li.sidebar__item-item-checkbox
+                                input(type="checkbox",id="sidebar__item-platform_#{key}", name="checkbox-platform", class="sidebar__item-platform_#{key}",
+                                checked="#{(key=='android') || (key=='ios') || (key=='windows-mobile') ? 'checked' : '' }").sidebar__item-input-checkbox= item
+                                label(for="sidebar__item-platform_#{key}",class="#{key=='android' || key=='ios' || key=='windows-mobile' ? 'checked' : '' }").sidebar__item-label-checkbox= item
+                    p.sidebar__item-bottom Сбросить фильтр
 

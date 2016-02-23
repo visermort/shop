@@ -2,9 +2,10 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 //@import "compass/reset";
 //@import 'compass';
+@import 'common/_normalize.scss';
+@import '../app/bower/select2/src/scss/core.scss';
 
 @import 'common/mixins';
 @import 'common/adjastment';
@@ -28,6 +29,7 @@ $color-article-top: #e4ebee;
 $color-article-top-font: #5d656c;
 $color-article-top-input-font: #7f7f7f;
 $color-table-2x1: #ebebeb;
+$logo-font-size: 40px;
 
 
 html, body {

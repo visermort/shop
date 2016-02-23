@@ -47,9 +47,14 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
 //  padding-left: $padding-left;
   padding: 15px 0 15px $padding-left;
   margin: 0;
+  cursor: pointer;
 }
+
 .sidebar-item:not(:last-child) {
   border-bottom: 1px solid $color-border;
+}
+.sidebar__item-block.hide {
+  display: none;
 }
 .sidebar__item-presence-item {
 //  position : relative;
@@ -63,19 +68,38 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   position: relative;
 }
 
-.sidebar__item-brands {
-  &-item {
+.sidebar__item {
+  &-item-checkbox {
     padding: 0 0 $padding-bottom $padding-left;
   }
-  &-input {
+  &-input-checkbox {
     display: none;
   }
-  &_label {
+  &-label-checkbox {
     padding-left: $padding-left;
     position: relative;
+    cursor: pointer;
   }
 }
 
+//.sidebar__item-platform {
+//  &-item {
+//    padding: 0 0 $padding-bottom $padding-left;
+//  }
+//  &_check {
+//    display: none;
+//  }
+//  &_label {
+//    padding-left: $padding-left;
+//    position: relative;
+//  }
+//}
+
+
+
+.sidebar__item-presence_label{
+  cursor: pointer;
+}
 
 //.sidebar__item-brands-item{
 //  padding: 0 0 $padding-bottom $padding-left;
@@ -102,11 +126,7 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
 //
 //}
 
-.sidebar__item-presence_label,
-.sidebar__item-brands_label,
-.sidebar__item-platform_label {
-  cursor: pointer;
-}
+
 
 .sidebar__item-price-input,
 .sidebar__item-price_label {
@@ -186,16 +206,4 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   }
 }
 
-.sidebar__item-platform {
-  &-item {
-    padding: 0 0 $padding-bottom $padding-left;
-  }
-  &_check {
-    display: none;
-  }
-  &_label {
-    padding-left: $padding-left;
-    position: relative;
-  }
-}
 

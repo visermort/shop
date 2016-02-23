@@ -5,8 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Интернет магазин</title>
-		<link rel="stylesheet" href="css/normalize.css">
+		<!--link(rel="stylesheet" href="css/normalize.css")-->
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -80,135 +81,146 @@
 										<li class="sidebar__type-item"><a href="#" class="sidebar__type-link budjet">Бюджетная линейка</a></li>
 									</ul>
 								</div>
-								<form method="post" name="formsidebar" id="formsidebar" class="sidebar__form">
+								<form method="post" name="formsidebar" id="formsidebar" action="" class="sidebar__form">
 									<ul class="sidebar__list">
 										<li class="sidebar__item-presence sidebar-item">
 											<p class="sidebar__item-header">Наличие в магазинах</p>
-											<ul class="sidebar__item-presence-list">
-												<li class="sidebar__item-presence-item">
-													<input type="radio" id="presence_radio_all" name="presence_radio_all" hidden checked class="sidebar__item-presence_radio presence-all checked">
-													<label for="presence_radio_all" class="sidebar__item-presence_label checked">Во всех магазинах</label>
-												</li>
-												<li class="sidebar__item-presence-item">
-													<input type="radio" id="presence_radio_niarest" name="presence_radio_niarest" hidden class="sidebar__item-presence_radio prsence-nearest">
-													<label for="presence_radio_niarest" class="sidebar__item-presence_label">В ближайшем ко мне магазине</label>
-												</li>
-											</ul>
+											<div class="sidebar__item-block">
+												<ul class="sidebar__item-presence-list">
+													<li class="sidebar__item-presence-item">
+														<input type="radio" id="presence_radio_all" name="presence_radio_all" hidden checked class="sidebar__item-presence_radio presence-all checked">
+														<label for="presence_radio_all" class="sidebar__item-presence_label checked">Во всех магазинах</label>
+													</li>
+													<li class="sidebar__item-presence-item">
+														<input type="radio" id="presence_radio_niarest" name="presence_radio_niarest" hidden class="sidebar__item-presence_radio prsence-nearest">
+														<label for="presence_radio_niarest" class="sidebar__item-presence_label">В ближайшем ко мне магазине</label>
+													</li>
+												</ul>
+											</div>
 										</li>
 										<li class="sidebar__item-brands sidebar-item">
 											<p class="sidebar__item-header">Бренды</p>
-											<ul class="sidebar__item-brand-list">
-												<li class="sidebar__item-brands-item">
-													<input type="checkbox" id="sidebar__item-brands_lenovo" name="checkbox-brand" class="sidebar__item-brands_lenovo sidebar__item-brands-input">
-													<label for="sidebar__item-brands_lenovo" class="checked sidebar__item-brands_label">Lenovo</label>
-												</li>
-												<li class="sidebar__item-brands-item">
-													<input type="checkbox" id="sidebar__item-brands_apple" name="checkbox-brand" class="sidebar__item-brands_apple sidebar__item-brands-input">
-													<label for="sidebar__item-brands_apple" class="checked sidebar__item-brands_label">Apple</label>
-												</li>
-												<li class="sidebar__item-brands-item">
-													<input type="checkbox" id="sidebar__item-brands_samsung" name="checkbox-brand" class="sidebar__item-brands_samsung sidebar__item-brands-input">
-													<label for="sidebar__item-brands_samsung" class="checked sidebar__item-brands_label">Samsung</label>
-												</li>
-												<li class="sidebar__item-brands-item">
-													<input type="checkbox" id="sidebar__item-brands_asus" name="checkbox-brand" class="sidebar__item-brands_asus sidebar__item-brands-input">
-													<label for="sidebar__item-brands_asus" class="sidebar__item-brands_label">Asus</label>
-												</li>
-												<li class="sidebar__item-brands-item">
-													<input type="checkbox" id="sidebar__item-brands_motorola" name="checkbox-brand" class="sidebar__item-brands_motorola sidebar__item-brands-input">
-													<label for="sidebar__item-brands_motorola" class="sidebar__item-brands_label">Motorola</label>
-												</li>
-											</ul>
-											<p class="sidebar__item-bottom">Сбросить фильтр</p>
+											<div class="sidebar__item-block">
+												<ul class="sidebar__item-brand-list">
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-brands_lenovo" name="checkbox-brand" checked="checked" class="sidebar__item-brands_lenovo sidebar__item-input-checkbox">
+														<label for="sidebar__item-brands_lenovo" class="checked sidebar__item-label-checkbox">Lenovo</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-brands_apple" name="checkbox-brand" checked="checked" class="sidebar__item-brands_apple sidebar__item-input-checkbox">
+														<label for="sidebar__item-brands_apple" class="checked sidebar__item-label-checkbox">Apple</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-brands_samsung" name="checkbox-brand" checked="checked" class="sidebar__item-brands_samsung sidebar__item-input-checkbox">
+														<label for="sidebar__item-brands_samsung" class="checked sidebar__item-label-checkbox">Samsung</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-brands_asus" name="checkbox-brand" checked="" class="sidebar__item-brands_asus sidebar__item-input-checkbox">
+														<label for="sidebar__item-brands_asus" class="sidebar__item-label-checkbox">Asus</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-brands_motorola" name="checkbox-brand" checked="" class="sidebar__item-brands_motorola sidebar__item-input-checkbox">
+														<label for="sidebar__item-brands_motorola" class="sidebar__item-label-checkbox">Motorola</label>
+													</li>
+												</ul>
+												<p class="sidebar__item-bottom">Сбросить фильтр</p>
+											</div>
 										</li>
 										<li class="sidebar__item-price sidebar-item">
 											<p class="sidebar__item-header">Цена</p>
-											<label for="price-text-start" class="sidebar__item-price_label label-start">от</label>
-											<input type="text" id="price-text-start" name="price-text-start" placeholder="100" class="sidebar__item-price-input price_start">
-											<label for="price-text-finish" class="sidebar__item-price_label label-finish">до</label>
-											<input type="text" id="price-text-finish" name="price-text-finish" placeholder="13 000" class="sidebar__item-price-input price_from">
-											<div class="sidebar__item-price-slider">
-												<p class="sidebar__item-price-slider-inner">цена</p>
+											<div class="sidebar__item-block">
+												<label for="price-text-start" class="sidebar__item-price_label label-start">от</label>
+												<input type="text" id="price-text-start" name="price-text-start" placeholder="100" class="sidebar__item-price-input price_start">
+												<label for="price-text-finish" class="sidebar__item-price_label label-finish">до</label>
+												<input type="text" id="price-text-finish" name="price-text-finish" placeholder="13 000" class="sidebar__item-price-input price_from">
+												<div class="sidebar__item-price-slider">
+													<p class="sidebar__item-price-slider-inner">цена</p>
+												</div>
+												<div id="sidebar__item-price-ui-slider" class="sidebar__item-price-ui-slider"></div>
 											</div>
 										</li>
 										<li class="sidebar__item-colors sidebar-item">
 											<p class="sidebar__item-header">Цвет</p>
-											<ul class="sidebar__item-colors-list">
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-white  ">white</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-gray active ">gray</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-black  ">black</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-dark-blue  ">dark-blue</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-red  ">red</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-yellow  ">yellow</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-orange  ">orange</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-green  ">green</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-blue  ">blue</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-violet  ">violet</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-pink  ">pink</div>
-												</li>
-												<li class="sidebar__item-colors-item">
-													<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
-													<div class="sidebar__item-colors_button button-brown  ">brown</div>
-												</li>
-											</ul>
+											<div class="sidebar__item-block">
+												<ul class="sidebar__item-colors-list">
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-white  ">white</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-gray active ">gray</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-black  ">black</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-dark-blue  ">dark-blue</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-red  ">red</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-yellow  ">yellow</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-orange  ">orange</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-green  ">green</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-blue  ">blue</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-violet  ">violet</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-pink  ">pink</div>
+													</li>
+													<li class="sidebar__item-colors-item">
+														<!--.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item-->
+														<div class="sidebar__item-colors_button button-brown  ">brown</div>
+													</li>
+												</ul>
+											</div>
 										</li>
 										<li class="sidebar__item-platform sidebar-item">
 											<p class="sidebar__item-header">Операционные системы</p>
-											<ul class="sidebar__item-platform-list">
-												<li class="sidebar__item-platform-item">
-													<input type="checkbox" id="sidebar__item-platform_android" name="checkbox-platform" class="sidebar__item-platform_android sidebar__item-platform_check">
-													<label for="sidebar__item-platform_android" class="checked sidebar__item-platform_label">Android</label>
-												</li>
-												<li class="sidebar__item-platform-item">
-													<input type="checkbox" id="sidebar__item-platform_ios" name="checkbox-platform" class="sidebar__item-platform_ios sidebar__item-platform_check">
-													<label for="sidebar__item-platform_ios" class="checked sidebar__item-platform_label">IOS</label>
-												</li>
-												<li class="sidebar__item-platform-item">
-													<input type="checkbox" id="sidebar__item-platform_windows-mobile" name="checkbox-platform" class="sidebar__item-platform_windows-mobile sidebar__item-platform_check">
-													<label for="sidebar__item-platform_windows-mobile" class="checked sidebar__item-platform_label">Windows Mobile</label>
-												</li>
-												<li class="sidebar__item-platform-item">
-													<input type="checkbox" id="sidebar__item-platform_symbian" name="checkbox-platform" class="sidebar__item-platform_symbian sidebar__item-platform_check">
-													<label for="sidebar__item-platform_symbian" class="sidebar__item-platform_label">Symbian</label>
-												</li>
-												<li class="sidebar__item-platform-item">
-													<input type="checkbox" id="sidebar__item-platform_custom" name="checkbox-platform" class="sidebar__item-platform_custom sidebar__item-platform_check">
-													<label for="sidebar__item-platform_custom" class="sidebar__item-platform_label">Custom</label>
-												</li>
-											</ul>
-											<p class="sidebar__item-bottom">Сбросить фильтр</p>
+											<div class="sidebar__item-block">
+												<ul class="sidebar__item-platform-list">
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-platform_android" name="checkbox-platform" checked="checked" class="sidebar__item-platform_android sidebar__item-input-checkbox">
+														<label for="sidebar__item-platform_android" class="checked sidebar__item-label-checkbox">Android</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-platform_ios" name="checkbox-platform" checked="checked" class="sidebar__item-platform_ios sidebar__item-input-checkbox">
+														<label for="sidebar__item-platform_ios" class="checked sidebar__item-label-checkbox">IOS</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-platform_windows-mobile" name="checkbox-platform" checked="checked" class="sidebar__item-platform_windows-mobile sidebar__item-input-checkbox">
+														<label for="sidebar__item-platform_windows-mobile" class="checked sidebar__item-label-checkbox">Windows Mobile</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-platform_symbian" name="checkbox-platform" checked="" class="sidebar__item-platform_symbian sidebar__item-input-checkbox">
+														<label for="sidebar__item-platform_symbian" class="sidebar__item-label-checkbox">Symbian</label>
+													</li>
+													<li class="sidebar__item-item-checkbox">
+														<input type="checkbox" id="sidebar__item-platform_custom" name="checkbox-platform" checked="" class="sidebar__item-platform_custom sidebar__item-input-checkbox">
+														<label for="sidebar__item-platform_custom" class="sidebar__item-label-checkbox">Custom</label>
+													</li>
+												</ul>
+												<p class="sidebar__item-bottom">Сбросить фильтр</p>
+											</div>
 										</li>
 									</ul>
 								</form>
@@ -232,7 +244,7 @@
 										<p class="content-header__right-paragraph">Вид каталога</p>
 										<div class="content-header__list">
 											<div class="content-header__item-info content-header__item"></div>
-											<div class="content-header__item-thumbs content-header__item"></div>
+											<div class="content-header__item-thumbs content-header__item active"></div>
 											<div class="content-header__item-list content-header__item"></div>
 										</div>
 									</div>
@@ -859,7 +871,7 @@
 					<div class="container">
 						<div class="important">
 							<h3 class="important__title">Важная информация</h3>
-							<div class="important__text">
+							<div id="important__text" class="important__text">
 								<p class="important_text_unit">Элемент политического процесса, однако, вызывает онтологический христианско-демократический национализм. Социальная парадигма фактически определяет теоретический континентально-европейский тип политической культуры. Понятие тоталитаризма последовательно. В таких странах, как Мексика и Венесуэла, понятие тоталитаризма отражает тоталитарный тип политической культуры. Бихевиоризм означает институциональный коммунизм.</p>
 								<p class="important_text_unit">Капиталистическое мировое общество, тем более в условиях социально-экономического кризиса, отражает прагматический феномен толпы. Референдум, несмотря на внешние воздействия, приводит плюралистический коммунизм. Понятие политического участия самопроизвольно. Понятие политического конфликта, как бы это ни казалось парадоксальным, доказывает доиндустриальный тип политической культуры. Политическое учение Руссо существенно символизирует политический процесс в современной России. Политическое учение Августина, с другой стороны, практически доказывает субъект политического процесса.</p>
 								<p class="important_text_unit">Феномен толпы, короче говоря, сохраняет феномен толпы. Политическое учение Фомы Аквинского сохраняет кризис легитимности, такого мнения придерживаются многие депутаты Государственной Думы. Как писал С.Хантингтон, феномен толпы интегрирует социализм. Еще Шпенглер в "Закате Европы" писал, что элемент политического процесса важно формирует антропологический элемент политического процесса, говорится в докладе ОБСЕ. Политическая психология интегрирует гуманизм. Механизм власти, с другой стороны, традиционен.</p>
@@ -904,6 +916,9 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="bower/jquery/jquery.js"></script>
+		<script type="text/javascript" src="bower/select2/dist/js/select2.js"></script>
+		<script type="text/javascript" src="js/vendor/columnizer/src/jquery.columnizer.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

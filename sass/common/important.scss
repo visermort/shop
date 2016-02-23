@@ -1,3 +1,15 @@
 .important__text {
   @include column-count(2);
+  text-align: justify;
+//  & .first {
+//    text-align: justify;
+//  }
+}
+.important_text_unit:first-child {
+  margin-top: 0;
+//  text-align: justify;
+}
+
+.columnizer-style{
+//  text-align: justify;
 }

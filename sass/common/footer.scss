@@ -20,7 +20,7 @@ $footer-text-color: white;
     &__link {
     color: $footer-text-color;
     font-family: MyriadProBold;
-    font-size: 34px;
+    font-size: $logo-font-size;
       text-decoration: none;
   }
 }
