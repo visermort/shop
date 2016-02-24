@@ -20,7 +20,7 @@
   font-family: OpenSansRegular;
   font-size: 14px;
   border: 1px solid $color-border;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   &__form-left {
     position: relative;
     margin-top: 10px;  }
@@ -30,7 +30,7 @@
   &__label-select {
     margin-top: 20px;
     margin-left: 24px;
-    margin-right: 8px;
+    margin-right: 6px;
   }
   &__select {
 //    margin-left: 8px;
@@ -70,17 +70,17 @@
   }
   &__list {
     float: right;
-    margin-right: 10px;
+    margin-right: 6px;
     margin-bottom: -5px;
   }
 }
 .content-header__right-paragraph {
   float: left;
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 .content-main {
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   margin-left: -16px;
   font-color: $textcolor;
   &-item {
@@ -92,16 +92,16 @@
     @include border-radius(6px);
     box-sizing: border-box;
     margin-left: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding: 19px 10px;
     &__articul {
       @include clearfix;
       margin-top: 8px;
-      font-family: MyriadProRegular;
       &-paragraph-left {
         margin: 0;
         margin-left: 25px;
         float: left;
+        font-family: MyriadProRegular;
         font-size: 12px;
         color: $color-article-top-input-font;
       }
@@ -109,6 +109,7 @@
         margin: 0;
         margin-left: 10px;
         float: left;
+        font-family: MyriadProRegular;
         font-size: 14px;
         color: $textcolor;
       }
@@ -117,7 +118,7 @@
       width: 134px;
       height: 134px;
       background-color: $color-input;
-      margin: 17px auto 10px;
+      margin: 0 auto 10px;
       border: 1px solid $color-border;
       @include border-radius(2px);
       margin-bottom: 15px;
@@ -128,7 +129,7 @@
     }
     &__photo-list {
       margin-left: 36px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     &__photo-item {
       display: inline-block;
@@ -188,15 +189,16 @@
     }
     &__ratio {
       margin-left: 36px;
-      margin-bottom: 10px;
+      margin-bottom: 0;
       @include clearfix;
     }
     &__ratio-list {
       float:left;
+      margin-top: -4px;
     }
     &__ratio-item {
       display: inline-block;
-      margin-right: 0;
+      margin-right: -1px;
       font-size: 0;
     }
     &__ratio-text {
@@ -211,8 +213,9 @@
       margin-left: 8px;
       float: left;
       padding-left: 10px;
-      margin-top: 15px;
+      margin-top: 10px;
       box-sizing: border-box;
+      margin-bottom: 0;
     }
     &__price {
       color: $textcolor;
@@ -235,7 +238,7 @@
         font-family: OpenSansSemibold;
         font-size: 12px;
         margin-left: 20px;
-        margin-top: 5px;
+        margin-top: 7px;
         margin-bottom: 0;
         position: relative;
         &:before {
@@ -260,6 +263,7 @@
         font-family: OpenSansBold;
         font-size: 14px;
         color: $color-input-sidebar;
+        border: none;
       }
     }
     &:hover {
@@ -272,7 +276,7 @@
 
 .content-main-item.itemInfo {
     width: 98%;
-    height: 245px;
+    height: 247px;
     margin-bottom: -5px;
     margin-top: 0;
     padding-top: 15px;
@@ -280,6 +284,7 @@
 
   & .content-main-item__articul {
     display: block;
+    margin-top: 2px;
   }
   & .content-main-item__info {
     display: block;
@@ -293,7 +298,8 @@
   & .content-main-item__photo-articul {
     width: 152px;
     float: left;
-    margin-top: 0;
+    margin-top: 4px;
+    margin-left: 3px;
   }
   & .content-main-item__photo-list {
     margin-left: 9px;
@@ -312,9 +318,9 @@
     float: right;
   }
   & .content-main-item__maininfo {
-    width: 375px;
+    width: 355px;
     float: left;
-    margin-left: 15px;
+    margin-left: 18px;
     margin-top: 10px;
   }
   & .content-main-item__info {
@@ -323,10 +329,11 @@
     text-overflow: ellipsis;
     font-family: MyriadProRegular;
     font-size: 14px;
-    color: #333333;
+    color: $textcolor;
     /* text-align: justify; */
-    line-height: 1.5;
+    line-height: 1.4;
     margin-bottom: 5px;
+    margin-top: 20px;
   }
   & .content-main-item__name {
     @include clearfix;
@@ -346,7 +353,7 @@
     margin-left: 0;
   }
   & .content-main-item__price_buy {
-    width: 140px;
+    width: 142px;
     display: block;
     float: right;
     border-left: 1px solid $color-border;
@@ -354,27 +361,34 @@
     position: relative;
   }
   & .content-main-item__price {
-    margin-left: 28px;
+    margin-left: 30px;
+    margin-top: 5px;
   }
   & .content-main-item__buy {
     position: absolute;
-    top: 150px;
-    left: 28px;
+    top: 156px;
+    left: 24px;
   }
   & .content-main-item__buy-presense {
     position: absolute;
     top: 40px;
     left: 15px;
+    margin-top: 0;
   }
 }
     //отображение основного контента в виде списка
 .content-main-item.itemList {
-  height: 50px;
+  height: 52px;
   width: 98%;
   padding: 8px 10px;
   margin-bottom: -5px;
   & .content-main-item__photo-articul {
     display: inline-block;
+//    float: left;
+//    margin-top: 10px;
+  }
+  & .content-main-item__articul-paragraph-left {
+    margin-left: 0;
   }
   & .content-main-item__photo {
     display: none;
@@ -390,6 +404,8 @@
   }
   & .content-main-item__articul {
     display: block;
+ //   float: left;
+    margin-top: 10px;
   }
   & .content-main-item__maininfo {
     display: inline-block;
@@ -402,23 +418,30 @@
   }
   & .content-main-item__name-paragraph {
     display: inline-block;
-    float: left;
-    margin-left: 10px;
+    margin-left: 5px;
+;
+  }
+  & .content-main-item__name-paragraph:last-child {
+    width: 45px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   & .content-main-item__name-paragraph-type {
     display: inline-block;
     float: left;
-    margin: 0 0 0 10px;
+    margin: 1px 0 0 10px;
   //  padding: 0;
   }
   & .content-main-item__price_buy {
     display: block;
     float: right;
+    margin-right: 3px;
   }
   & .content-main-item__price {
    // display: inline-block;
     float: left;
-    margin-right: 20px;
+    margin-right: 17px;
     margin-top: 2px;
   }
   & .content-main-item__buy {
@@ -426,7 +449,7 @@
   }
   & .content-main-item__buy-presense {
     margin-top: 9px;
-    margin-right: 15px;
+    margin-right: 22px;
   }
 
 }
@@ -447,8 +470,8 @@
   float:left;
   display: inline-block;
   background-color: $color-input;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   @include border-radius(3px);
   margin-left: 5px;
   border: 1px solid $color-border;

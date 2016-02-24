@@ -15,8 +15,8 @@ $footer-text-color: white;
 .footer-logo {
   display: block;
   float: left;
-  margin-top: 70px;
-  margin-left: 80px;
+  margin-top: 68px;
+  margin-left: 78px;
     &__link {
     color: $footer-text-color;
     font-family: MyriadProBold;
@@ -34,14 +34,14 @@ $footer-text-color: white;
 }
 .footer-right__social {
   &-list {
-    margin: 28px $marginmain 28px 0;
+    margin: 35px 84px 25px 0;
     float: right;
   }
   &-item {
     display: inline-block;
     list-style-type: none;
     position: relative;
-    margin-left: 25px;
+    margin-left: 22px;
     width: 44px;
     height: 44px;
     font-size: 0;
@@ -56,12 +56,12 @@ $footer-text-color: white;
 .footer-right__select {
   &-list {
     text-align: right;
-    margin-right: $marginmain;
+    margin-right: 83px;
   }
   &-item {
     display: inline-block;
     list-style-type: none;
-    margin: 0 0 20px 20px;
+    margin: 0 0 18px 22px;
   }
   &-link {
     color: $footer-text-color;
@@ -79,7 +79,7 @@ $footer-text-color: white;
   //  margin: 0 auto;
   border-top: 2px solid #494949;
   &__copyright {
-    margin: 9px auto 0 auto;
+    margin: 5px auto 0 auto;
     font-family: OpenSansRegular;
     font-size: 12px;
     text-align: center;

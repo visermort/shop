@@ -1,5 +1,5 @@
-$padding-left: 25px;
-$padding-bottom: 22px;
+$padding-left: 30px;
+$padding-bottom: 18px;
 //$colors : white, gray, black, blue, red, yellow, orange, green, blue, violet, pink, brown;
 $ccolors : (button-white: white,button-gray: gray,button-black: black, button-dark-blue: #0a3153,
            button-red: red, button-yellow: yellow, button-orange: orange, button-green: green,
@@ -17,13 +17,13 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   @include border-radius(5px);
 }
 .sidebar__type {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 .sidebar__type-link {
   display: block;
   color: $textcolor;
   background-color: $color_sidebartop;
-  padding: 14px 0 14px $padding-left;
+  padding: 13px 0 13px $padding-left;
   text-decoration: none;
 }
 .sidebar__type-item .active {
@@ -45,7 +45,7 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   font-family: OpenSansSemibold;
   font-size: 16px;
 //  padding-left: $padding-left;
-  padding: 15px 0 15px $padding-left;
+  padding: 14px 0 14px $padding-left;
   margin: 0;
   cursor: pointer;
 }
@@ -172,13 +172,14 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
 }
 
 .sidebar__item-colors-list {
-  padding: 0 $padding-left $padding-bottom $padding-left;
+  padding: 0 $padding-left 0 $padding-left;
 }
 .sidebar__item-colors-item {
   display: inline-block;
   padding: 0;
-  margin: 0 16px 16px 0;
+  margin: 0 17px 21px 0;
 }
+
 
 
 .sidebar__item-colors_button {
@@ -187,8 +188,8 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   padding: 0;
   display: block;
   box-sizing: border-box;
-  width: 43px;
-  height: 43px;
+  width: 38px;
+  height: 38px;
   border: 1px solid $color-border;
   @include box-shadow(255,102,0,0px,0);
   cursor: pointer;

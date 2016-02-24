@@ -2,7 +2,7 @@
 .header-top-container{
   background-color: $topcolor;
   border-bottom: 2px solid #ebedef;
-
+  height: 77px;
 }
 
 .header-top ,
@@ -38,7 +38,7 @@
   display: inline-block;
   list-style-type: none;
   padding: 0;
-  margin-right: 11px;
+  margin-right: 13px;
   font-size: 0;
   width: 25px;
   height: 25px;
@@ -85,6 +85,7 @@
 .header-top__adress-paragraph {
   margin-top: 28px;
   position: relative;
+  margin-right: 80px;
 }
 .header-bottom-logo__link {
   font-family: MyriadProBold;
@@ -98,7 +99,7 @@
   float: left;
 }
 .header-bottom-logo {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .header-bottom-search {
   margin-top: 28px;
@@ -108,10 +109,11 @@
   background-color: $color-input;
   border: 1px solid #dee1e4;
   @include border-radius(4px 0 0 4px);
-  width: 290px;
+  width: 274px;
   height: 32px;
   font-family: OpenSansLight;
   font-size: 14px;
+  padding-left: 15px;
  // display:block;
 }
 .header-bottom-search__submit {
@@ -130,14 +132,14 @@
 
 .header-bottom-nav__list {
   margin-top: 36px;
-  margin-bottom :32px;
+  margin-bottom :35px;
 //  margin-right: $marginmain;
 }
 .header-bottom-nav__link {
   color: $textcolor;
   font-family: OpenSansSemibold;
   font-size: 16px;
-  padding-left: 34px;
+  padding-left: 29px;
 }
 .header-bottom-nav__link:hover {
   color: $color-orange;
@@ -152,7 +154,7 @@
   margin-bottom: 30px;
 }
 .nav__list {
-  padding: 0;
+  padding: 0 0 0 15px;
 }
 
 .header-bottom-nav__item {
@@ -164,10 +166,11 @@
   font-family: OpenSansRegular;
   text-decoration: none;
   margin: 0;
-  padding: 16px;
+  padding: 16px 15px 15px 15px;
 }
 .nav__item {
   padding: 16px 0 ;
+  margin-left: -5px;
 }
 
 .nav__link:hover {
@@ -225,5 +228,8 @@
   color: $textcolor;
   font-family: OpenSansBold;
   font-size: 20px;
+}
+.maintittle {
+  margin-bottom: 26px;
 }
 
