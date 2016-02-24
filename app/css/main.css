@@ -1425,12 +1425,12 @@ ul {
   font-family: MyriadProBold;
   src: url("../fonts/MyriadProBold.ttf");
 }
-/* line 35, ../../sass/main.scss */
+/* line 36, ../../sass/main.scss */
 html, body {
   background-color: #282828;
 }
 
-/* line 39, ../../sass/main.scss */
+/* line 40, ../../sass/main.scss */
 .wrapper {
   width: 1280px;
   background-color: #f4f4f4;

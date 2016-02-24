@@ -19,36 +19,40 @@ include content-list
             each val in contentItems
                 li.content-main-item
                     .container
-                        .content-main-item__photo
-                            .content-main-item__photo-main
-                                img(src=contents['image'],alt=contents['name']).content-main-item__photo-main-photo
-                            ul.content-main-item__photo-list
-                                each imagesval,imageskey in contents['images']
-                                    li(class="#{imageskey =='image1' ? 'active' : '' }").content-main-item__photo-item
-                                        img(src=imagesval,alt=imageskey).content-main-item__photo-item-photo
-                        .content-main-item__articul
-                            p.content-main-item__articul-title Артикул
-                            p.content-main-item__articul-val= contents['articul']
-                        .content-main-item__name
-                            p.content-main-item__name-paragraph= contents['name']
-                            p.content-main-item__name-paragraph= contents['name2']
-                        p.content-main-item__info= contents['info']
-                        table.content-main-item__charact-table
-                            each charval,charkey in contents['charact']
-                                tr.content-main-item__charact-item-row
-                                    td.content-main-item__charact-item-prop=charkey
-                                    td.content-main-item__charact-item-val=charval
-                        .content-main-item__ratio
-                            ul.content-main-item__ratio-list
-                                each ratioval,ratiokey in ratio_list
-                                    li.content-main-item__ratio-item(class="#{ratioval <= contents['ratio']? 'active' : '' }")=ratioval
-                            p.content-main-item__ratio-text=contents['ratio']
-                        p.content-main-item__price= contents['price']
-                            span.content-main-item__price-rouble &#8381;
-                        .content-main-item__buy
-                            //span.content-main-item__buy-icon 1
-                            p.content-main-item__buy-presense=contents['presence']
-                            button.content-main-item__buy-button В корзину
+                        .content-main-item__photo-articul
+                            .content-main-item__photo
+                                .content-main-item__photo-main
+                                    img(src=contents['image'],alt=contents['name']).content-main-item__photo-main-photo
+                                ul.content-main-item__photo-list
+                                    each imagesval,imageskey in contents['images']
+                                        li(class="#{imageskey =='image1' ? 'active' : '' }").content-main-item__photo-item
+                                            img(src=imagesval,alt=imageskey).content-main-item__photo-item-photo
+                            .content-main-item__articul
+                                p.content-main-item__articul-paragraph-left Артикул
+                                p.content-main-item__articul-paragraph-right= contents['articul']
+                        .content-main-item__maininfo
+                            .content-main-item__name
+                                p.content-main-item__name-paragraph-type= contents['type']
+                                p.content-main-item__name-paragraph= contents['name']
+                                p.content-main-item__name-paragraph= contents['name2']
+                            p.content-main-item__info= contents['info']
+                            table.content-main-item__charact-table
+                                each charval,charkey in contents['charact']
+                                    tr.content-main-item__charact-item-row
+                                        td.content-main-item__charact-item-prop=charkey
+                                        td.content-main-item__charact-item-val=charval
+                            .content-main-item__ratio
+                                ul.content-main-item__ratio-list
+                                    each ratioval,ratiokey in ratio_list
+                                        li.content-main-item__ratio-item(class="#{ratioval <= contents['ratio']? 'active' : '' }")=ratioval
+                                p.content-main-item__ratio-text=contents['ratio']
+                        .content-main-item__price_buy
+                            p.content-main-item__price= contents['price']
+                                span.content-main-item__price-rouble &#8381;
+                            .content-main-item__buy
+                                //span.content-main-item__buy-icon 1
+                                p.content-main-item__buy-presense=contents['presence']
+                                button.content-main-item__buy-button В корзину
 
 
     .content-footer

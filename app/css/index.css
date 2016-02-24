@@ -1425,12 +1425,12 @@ ul {
   font-family: MyriadProBold;
   src: url("../fonts/MyriadProBold.ttf");
 }
-/* line 35, ../../sass/main.scss */
+/* line 36, ../../sass/main.scss */
 html, body {
   background-color: #282828;
 }
 
-/* line 39, ../../sass/main.scss */
+/* line 40, ../../sass/main.scss */
 .wrapper {
   width: 1280px;
   background-color: #f4f4f4;
@@ -2271,6 +2271,38 @@ html, body {
   padding: 19px 10px;
 }
 /* line 97, ../../sass/common/article.scss */
+.content-main-item__articul {
+  margin-top: 8px;
+  font-family: MyriadProRegular;
+}
+/* line 4, ../../sass/common/mixins.scss */
+.content-main-item__articul:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../../sass/common/mixins.scss */
+.content-main-item__articul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 101, ../../sass/common/article.scss */
+.content-main-item__articul-paragraph-left {
+  margin: 0;
+  margin-left: 25px;
+  float: left;
+  font-size: 12px;
+  color: #7f7f7f;
+}
+/* line 108, ../../sass/common/article.scss */
+.content-main-item__articul-paragraph-right {
+  margin: 0;
+  margin-left: 10px;
+  float: left;
+  font-size: 14px;
+  color: #333333;
+}
+/* line 116, ../../sass/common/article.scss */
 .content-main-item__photo-main {
   width: 134px;
   height: 134px;
@@ -2282,17 +2314,17 @@ html, body {
   border-radius: 2px;
   margin-bottom: 15px;
 }
-/* line 105, ../../sass/common/article.scss */
+/* line 124, ../../sass/common/article.scss */
 .content-main-item__photo-main-photo {
   height: 124px;
   margin: 5px 20px;
 }
-/* line 110, ../../sass/common/article.scss */
+/* line 129, ../../sass/common/article.scss */
 .content-main-item__photo-list {
   margin-left: 36px;
   margin-bottom: 15px;
 }
-/* line 114, ../../sass/common/article.scss */
+/* line 133, ../../sass/common/article.scss */
 .content-main-item__photo-item {
   display: inline-block;
   width: 32px;
@@ -2304,63 +2336,67 @@ html, body {
   border-radius: 2px;
   margin-right: 13px;
 }
-/* line 122, ../../sass/common/article.scss */
+/* line 141, ../../sass/common/article.scss */
 .content-main-item__photo-item.active {
   border-color: #ff6707;
 }
-/* line 125, ../../sass/common/article.scss */
+/* line 144, ../../sass/common/article.scss */
 .content-main-item__photo-item-photo {
   height: 28px;
   margin: 2px 5px;
 }
-/* line 130, ../../sass/common/article.scss */
+/* line 149, ../../sass/common/article.scss */
 .content-main-item__articul {
   display: none;
 }
-/* line 133, ../../sass/common/article.scss */
+/* line 152, ../../sass/common/article.scss */
 .content-main-item__name {
   font-family: OpenSansSemibold;
   font-size: 14px;
   text-align: center;
   margin-bottom: 3px;
 }
-/* line 138, ../../sass/common/article.scss */
+/* line 157, ../../sass/common/article.scss */
 .content-main-item__name-paragraph {
   overflow: hidden;
   text-overflow: clip;
   margin: 0;
   padding: 0;
 }
-/* line 145, ../../sass/common/article.scss */
+/* line 162, ../../sass/common/article.scss */
+.content-main-item__name-paragraph-type {
+  display: none;
+}
+/* line 167, ../../sass/common/article.scss */
 .content-main-item__info {
   display: none;
 }
-/* line 148, ../../sass/common/article.scss */
+/* line 170, ../../sass/common/article.scss */
 .content-main-item__charact-table {
   font-family: MyriadProRegular;
   font-size: 14px;
 }
-/* line 152, ../../sass/common/article.scss */
+/* line 174, ../../sass/common/article.scss */
 .content-main-item__charact-item-prop {
   text-align: left;
 }
-/* line 155, ../../sass/common/article.scss */
+/* line 177, ../../sass/common/article.scss */
 .content-main-item__charact-item-val {
   text-align: right;
 }
-/* line 158, ../../sass/common/article.scss */
+/* line 180, ../../sass/common/article.scss */
 .content-main-item__charact-table {
   width: 100%;
 }
-/* line 161, ../../sass/common/article.scss */
+/* line 183, ../../sass/common/article.scss */
 .content-main-item__charact-item-row {
   height: 20px;
 }
-/* line 163, ../../sass/common/article.scss */
+/* line 185, ../../sass/common/article.scss */
 .content-main-item__charact-item-row:nth-child(2n+1) {
   background-color: #ebebeb;
 }
-/* line 167, ../../sass/common/article.scss */
+/* line 189, ../../sass/common/article.scss */
 .content-main-item__ratio {
   margin-left: 36px;
   margin-bottom: 10px;
@@ -2376,17 +2412,17 @@ html, body {
   display: table;
   clear: both;
 }
-/* line 172, ../../sass/common/article.scss */
+/* line 194, ../../sass/common/article.scss */
 .content-main-item__ratio-list {
   float: left;
 }
-/* line 175, ../../sass/common/article.scss */
+/* line 197, ../../sass/common/article.scss */
 .content-main-item__ratio-item {
   display: inline-block;
   margin-right: 0;
   font-size: 0;
 }
-/* line 180, ../../sass/common/article.scss */
+/* line 202, ../../sass/common/article.scss */
 .content-main-item__ratio-text {
   display: block;
   width: 25px;
@@ -2404,7 +2440,7 @@ html, body {
   margin-top: 15px;
   box-sizing: border-box;
 }
-/* line 195, ../../sass/common/article.scss */
+/* line 217, ../../sass/common/article.scss */
 .content-main-item__price {
   color: #333333;
   font-family: OpenSansSemibold;
@@ -2413,7 +2449,7 @@ html, body {
   margin-top: 0;
   margin-bottom: 2px;
 }
-/* line 203, ../../sass/common/article.scss */
+/* line 225, ../../sass/common/article.scss */
 .content-main-item__price-rouble {
   font-family: Rouble;
   font-size: 22px;
@@ -2430,7 +2466,7 @@ html, body {
   display: table;
   clear: both;
 }
-/* line 210, ../../sass/common/article.scss */
+/* line 232, ../../sass/common/article.scss */
 .content-main-item__buy-presense {
   float: left;
   color: #7f7f7f;
@@ -2441,7 +2477,7 @@ html, body {
   margin-bottom: 0;
   position: relative;
 }
-/* line 219, ../../sass/common/article.scss */
+/* line 241, ../../sass/common/article.scss */
 .content-main-item__buy-presense:before {
   content: " ";
   display: block;
@@ -2456,7 +2492,7 @@ html, body {
   float: left;
   position: absolute;
 }
-/* line 232, ../../sass/common/article.scss */
+/* line 254, ../../sass/common/article.scss */
 .content-main-item__buy-button {
   float: right;
   width: 103px;
@@ -2469,17 +2505,221 @@ html, body {
   font-size: 14px;
   color: #ffffff;
 }
-/* line 243, ../../sass/common/article.scss */
+/* line 265, ../../sass/common/article.scss */
 .content-main-item:hover {
   -webkit-box-shadow: 0 0 4px 2px rgba(212, 212, 212, 0.6);
   -moz-box-shadow: 0 0 4px 2px rgba(212, 212, 212, 0.6);
   box-shadow: 0 0 4px 2px rgba(212, 212, 212, 0.6);
 }
 
-/* line 250, ../../sass/common/article.scss */
+/* line 273, ../../sass/common/article.scss */
 .content-main-item.itemInfo {
-  width: 100%;
-  heigth: 200px;
+  width: 98%;
+  height: 245px;
+  margin-bottom: -5px;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+/* line 281, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__articul {
+  display: block;
+}
+/* line 284, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__info {
+  display: block;
+}
+/* line 287, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__charact-table {
+  display: none;
+}
+/* line 290, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__photo-main {
+  margin-top: 0;
+}
+/* line 293, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__photo-articul {
+  width: 152px;
+  float: left;
+  margin-top: 0;
+}
+/* line 298, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__photo-list {
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+/* line 302, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__photo-item {
+  margin-right: 13px;
+}
+/* line 305, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__photo-item:last-child {
+  margin-right: 0;
+}
+/* line 308, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__name-paragraph-left {
+  float: left;
+}
+/* line 311, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__name-paragraph-right {
+  float: right;
+}
+/* line 314, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__maininfo {
+  width: 375px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+/* line 320, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__info {
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: MyriadProRegular;
+  font-size: 14px;
+  color: #333333;
+  /* text-align: justify; */
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+/* line 4, ../../sass/common/mixins.scss */
+.content-main-item.itemInfo .content-main-item__name:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../../sass/common/mixins.scss */
+.content-main-item.itemInfo .content-main-item__name:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 334, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__name-paragraph-type {
+  display: none;
+}
+/* line 337, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__name-paragraph {
+  display: inline-block;
+  font-family: MyriadProRegular;
+  font-size: 16px;
+  color: #010101;
+  float: left;
+  margin-left: 5px;
+}
+/* line 345, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__ratio {
+  margin-left: 0;
+}
+/* line 348, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__price_buy {
+  width: 140px;
+  display: block;
+  float: right;
+  border-left: 1px solid #dee1e4;
+  height: 210px;
+  position: relative;
+}
+/* line 356, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__price {
+  margin-left: 28px;
+}
+/* line 359, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__buy {
+  position: absolute;
+  top: 150px;
+  left: 28px;
+}
+/* line 364, ../../sass/common/article.scss */
+.content-main-item.itemInfo .content-main-item__buy-presense {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+/* line 371, ../../sass/common/article.scss */
+.content-main-item.itemList {
+  height: 50px;
+  width: 98%;
+  padding: 8px 10px;
+  margin-bottom: -5px;
+}
+/* line 376, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__photo-articul {
+  display: inline-block;
+}
+/* line 379, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__photo {
+  display: none;
+}
+/* line 382, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__info {
+  display: none;
+}
+/* line 385, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__charact-table {
+  display: none;
+}
+/* line 388, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__ratio {
+  display: none;
+}
+/* line 391, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__articul {
+  display: block;
+}
+/* line 394, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__maininfo {
+  display: inline-block;
+}
+/* line 397, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__name {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  color: black;
+}
+/* line 4, ../../sass/common/mixins.scss */
+.content-main-item.itemList .content-main-item__name:before {
+  content: "";
+  display: table;
+}
+/* line 8, ../../sass/common/mixins.scss */
+.content-main-item.itemList .content-main-item__name:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 403, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__name-paragraph {
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+}
+/* line 408, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__name-paragraph-type {
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 10px;
+}
+/* line 414, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__price_buy {
+  display: block;
+  float: right;
+}
+/* line 418, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__price {
+  float: left;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+/* line 424, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__buy {
+  display: inline-block;
+}
+/* line 427, ../../sass/common/article.scss */
+.content-main-item.itemList .content-main-item__buy-presense {
+  margin-top: 9px;
+  margin-right: 15px;
 }
 
 /* line 4, ../../sass/common/mixins.scss */
@@ -2494,7 +2734,7 @@ html, body {
   clear: both;
 }
 
-/* line 259, ../../sass/common/article.scss */
+/* line 439, ../../sass/common/article.scss */
 .content-footer__sel-list {
   display: block;
   float: right;
@@ -2503,7 +2743,7 @@ html, body {
   color: #7f7f7f;
 }
 
-/* line 266, ../../sass/common/article.scss */
+/* line 446, ../../sass/common/article.scss */
 .content-footer__sel-item {
   float: left;
   display: inline-block;
@@ -2521,7 +2761,7 @@ html, body {
   box-sizing: border-box;
   position: relative;
 }
-/* line 280, ../../sass/common/article.scss */
+/* line 460, ../../sass/common/article.scss */
 .content-footer__sel-item:hover {
   background-color: #fcfcfc;
   border-color: #aeaeae;
@@ -2530,7 +2770,7 @@ html, body {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* line 286, ../../sass/common/article.scss */
+/* line 466, ../../sass/common/article.scss */
 .content-footer__sel-list .active {
   background-color: #e0e0e0;
   border-color: #aeaeae;
