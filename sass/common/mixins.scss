@@ -14,9 +14,9 @@
 
 //border-radius
 @mixin border-radius($r){
-  -webkit-border-radius: $r;
-  -moz-border-radius: $r;
-  border-radius: $r;
+  -webkit-border-radius: $r  !important;
+  -moz-border-radius: $r !important;
+  border-radius: $r !important;
 }
 
 @mixin column-count($c) { // в <IE10 не поддерживается  для ИЕ сделаем JS
@@ -26,12 +26,12 @@
 }
 
 @mixin box-shadow($r,$g,$b,$s,$op) {
-  -webkit-box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op);
-  -moz-box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op);
-  box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op);
+  -webkit-box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op) !important;
+  -moz-box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op) !important;
+  box-shadow: 0px 0px 3px $s rgba($r, $g, $b, $op) !important;
 }
 @mixin box-shadow-all($x, $y, $bl, $rad, $r,$g,$b,$op) {
-  -webkit-box-shadow: $x  $y $bl $rad rgba($r, $g, $b, $op);
-  -moz-box-shadow: $x  $y $bl $rad rgba($r, $g, $b, $op);
-  box-shadow: $x  $y $bl $rad  rgba($r, $g, $b, $op);
+  -webkit-box-shadow: $x  $y $bl $rad rgba($r, $g, $b, $op) !important;
+  -moz-box-shadow: $x  $y $bl $rad rgba($r, $g, $b, $op) !important;
+  box-shadow: $x  $y $bl $rad  rgba($r, $g, $b, $op) !important;
 }

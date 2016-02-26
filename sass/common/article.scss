@@ -33,20 +33,21 @@
     margin-right: 6px;
   }
   &__select {
+//    width: 1px;
 //    margin-left: 8px;
-    width: 143px;
-    height: 28px;
-    @include border-radius(3px);
-    background-color: $topcolor;
-    -webkit-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
-    -moz-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
-    box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
-    border: solid 1px $boxshadow;
-    color: $color-article-top-input-font;
-    font-family: OpenSansLignt;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
+//    width: 143px;
+//    height: 28px;
+//    @include border-radius(3px);
+//    background-color: $topcolor;
+//    -webkit-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+//    -moz-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+//    box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+//    border: solid 1px $boxshadow;
+//    color: $color-article-top-input-font;
+//    font-family: OpenSansLignt;
+//    -webkit-appearance: none;
+//    -moz-appearance: none;
+//    -ms-appearance: none;
     appearance: none!important;
   }
   &__right {
@@ -65,7 +66,7 @@
     }
     &.active {
       //background-color: $color-input;
-      border-top: 2px solid $color-border;
+     // border-top: 2px solid $color-border;
     }
   }
   &__list {
@@ -74,6 +75,125 @@
     margin-bottom: -5px;
   }
 }
+
+////для select2 стили
+//.select2-container {
+//  width: 143px !important;
+//  * {
+//    outline: none;
+//  }
+//  & .select2-selection__arrow {
+//
+//  }
+//
+//  &.select2-container--open { //открыто
+//
+//    & .select2-selection__arrow {
+//
+//    }
+//  .select2-selection__rendered {
+//  font-size: 12px;
+//    //font-family
+//    //color
+//  }
+//  .select2-dropdown {
+//    margin-top: 2px;
+//    bottom: 0 none;
+//    @include border-radius(3px);
+//    @include box-shadow-all(1,0,5px,1px,197,197,197,0.7);
+//    background: #ffffff;
+//    & .select2-result__option {
+//      background: #ffffff;
+//      font-size: 14px;
+//      font-family: OpenSansLight;
+//      color: #7f7f7f !important;
+//      & .select2-results__option--highlighted {
+//        color: #333333 !important;
+//        font-family: OpenSansSemibold;
+//        font-size: 14px;
+//        background: #ffffff;
+//      }
+//
+//    }
+//
+//  }
+//
+//  }
+//
+//}
+
+.select2-selection__arrow b {
+  display: none;
+}
+.select2-container {
+//  background: transparent !important;
+  width: 143px !important;
+  height: 28px !important;
+  //@include border-radius(3px);
+  //background-color: $topcolor !important;
+  //-webkit-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+  //-moz-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+  //box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+  border: solid 1px $boxshadow !important;
+  color: $color-article-top-input-font !important;
+  font-family: OpenSansLignt !important;
+  //-webkit-appearance: none !important;
+  //-moz-appearance: none !important;
+  //-ms-appearance: none !important;
+  //appearance: none!important;
+
+  * {
+    outline: none;//убираем страндартную рамку вокруг элемента при фокусе
+  }
+  &.select2-container--open { //открыто
+
+      & .select2-selection__arrow {//стрелкаа
+        background-image: url(../images/sprite-content-top.png) !important;
+        background-repeat: no-repeat !important;
+        display: block !important;
+        width: 13px !important;
+        height: 9px !important;
+        background-position: -103px -30px !important;
+        top: 10px !important;
+        right: 5px !important;
+      }
+  }
+  & .select2-selection__arrow {//обычное состояние - стрелка
+    background-image: url(../images/sprite-content-top.png) !important;
+    background-repeat: no-repeat !important;
+    display: block !important;
+    width: 13px !important;
+    height: 9px !important;
+    background-position: -30px -30px !important;
+    top: 10px !important;
+    right: 5px !important;
+  }
+  .select2-dropdown {
+    margin-top: 2px !important;
+    bottom: 0 none  !important;
+    @include border-radius(3px);
+    @include box-shadow-all(1, 0, 5px, 1px, 197, 197, 197, 0.7);
+    background-color: #ffffff !important;
+    .select2-results__option {
+      background-color: #ffffff !important;
+      font-size: 14px !important;
+      font-family: OpenSansLight !important;
+      color: #7f7f7f !important;
+      &--highlighted {
+        color: #333333 !important;
+        font-family: OpenSansSemibold !important;
+        font-size: 14px !important;
+        background-color: #ffffff !important;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 .content-header__right-paragraph {
   float: left;
   margin-right: 17px;

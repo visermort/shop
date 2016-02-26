@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Интернет магазин</title>
 		<!--link(rel="stylesheet" href="css/normalize.css")-->
+		<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+		<link rel="stylesheet" href="bower/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/index.css">
-		<link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -130,13 +131,10 @@
 											<p class="sidebar__item-header">Цена</p>
 											<div class="sidebar__item-block">
 												<label for="price-text-start" class="sidebar__item-price_label label-start">от</label>
-												<input type="text" id="price-text-start" name="price-text-start" placeholder="100" class="sidebar__item-price-input price_start">
+												<input type="text" id="price-text-start" name="price-text-start" placeholder="999" data-range="100" data-user="999" class="sidebar__item-price-input price_start">
 												<label for="price-text-finish" class="sidebar__item-price_label label-finish">до</label>
-												<input type="text" id="price-text-finish" name="price-text-finish" placeholder="13 000" class="sidebar__item-price-input price_from">
-												<div class="sidebar__item-price-slider">
-													<p class="sidebar__item-price-slider-inner">цена</p>
-												</div>
-												<div id="sidebar__item-price-ui-slider" class="sidebar__item-price-ui-slider"></div>
+												<input type="text" id="price-text-finish" name="price-text-finish" placeholder="13000" data-range="25000" data-user="13000" class="sidebar__item-price-input price_from">
+												<div id="slider" class="sidebar__item-price-ui-slider"></div>
 											</div>
 										</li>
 										<li class="sidebar__item-colors sidebar-item">
@@ -979,9 +977,9 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="bower/jquery/jquery.js"></script>
+		<script type="text/javascript" src="bower/jquery-ui/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="bower/select2/dist/js/select2.js"></script>
 		<script type="text/javascript" src="js/vendor/columnizer/src/jquery.columnizer.js"></script>
-		<script type="text/javascript" src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

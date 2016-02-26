@@ -1315,49 +1315,7 @@ ul {
   background-position: -199px -87px;
 }
 
-/* line 170, ../../sass/common/spritesheets.scss */
-.content-header__form-left:after {
-  background-image: url(../images/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-  content: " ";
-  position: absolute;
-  top: 21px;
-  right: 6px;
-  width: 13px;
-  height: 9px;
-  background-position: -10px -10px;
-}
-
-/* line 184, ../../sass/common/spritesheets.scss */
-.content-header__item:before {
-  background-image: url(../images/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-  content: " ";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 16px;
-  left: 16px;
-}
-
-/* line 195, ../../sass/common/spritesheets.scss */
-.content-header__item-info:before {
-  background-position: -163px -163px;
-}
-
-/* line 198, ../../sass/common/spritesheets.scss */
-.content-header__item-thumbs:before {
-  background-position: -202px -10px;
-}
-
-/* line 201, ../../sass/common/spritesheets.scss */
-.content-header__item-list:before {
-  background-position: -127px -163px;
-}
-
-/* line 207, ../../sass/common/spritesheets.scss */
+/* line 187, ../../sass/common/spritesheets.scss */
 .content-footer__sel-left:after,
 .content-footer__sel-right:after {
   width: 6px;
@@ -1371,17 +1329,17 @@ ul {
   left: 8px;
 }
 
-/* line 219, ../../sass/common/spritesheets.scss */
+/* line 199, ../../sass/common/spritesheets.scss */
 .content-footer__sel-left:after {
   background-position: -81px -10px;
 }
 
-/* line 222, ../../sass/common/spritesheets.scss */
+/* line 202, ../../sass/common/spritesheets.scss */
 .content-footer__sel-right:after {
   background-position: -107px -10px;
 }
 
-/* line 226, ../../sass/common/spritesheets.scss */
+/* line 206, ../../sass/common/spritesheets.scss */
 .content-main-item__ratio-item {
   background-image: url(../images/spritesheet.png);
   background-repeat: no-repeat;
@@ -1390,11 +1348,75 @@ ul {
   height: 20px;
   background-position: -85px -122px;
 }
-/* line 233, ../../sass/common/spritesheets.scss */
+/* line 213, ../../sass/common/spritesheets.scss */
 .content-main-item__ratio-item.active {
   width: 16px;
   height: 15px;
   background-position: -49px -122px;
+}
+
+/* line 242, ../../sass/common/spritesheets.scss */
+.content-header__item:before {
+  background-image: url(../images/sprite-content-top.png);
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  left: 16px;
+}
+
+/* line 253, ../../sass/common/spritesheets.scss */
+.content-header__item-info:before {
+  background-position: -182px -30px;
+}
+
+/* line 256, ../../sass/common/spritesheets.scss */
+.content-header__item-thumbs:before {
+  background-position: -30px -182px;
+}
+
+/* line 259, ../../sass/common/spritesheets.scss */
+.content-header__item-list:before {
+  background-position: -106px -99px;
+}
+
+/* line 263, ../../sass/common/spritesheets.scss */
+.content-header__item-info.active:before {
+  background-position: -182px -106px;
+}
+
+/* line 266, ../../sass/common/spritesheets.scss */
+.content-header__item-thumbs.active:before {
+  background-position: -106px -182px;
+}
+
+/* line 269, ../../sass/common/spritesheets.scss */
+.content-header__item-list.active:before {
+  background-position: -30px -99px;
+}
+
+/* line 274, ../../sass/common/spritesheets.scss */
+.sprite {
+  background-image: url(../images/sprite-content-top.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 280, ../../sass/common/spritesheets.scss */
+.sprite-combo-down {
+  width: 13px;
+  height: 9px;
+  background-position: -30px -30px;
+}
+
+/* line 286, ../../sass/common/spritesheets.scss */
+.sprite-combo-up {
+  width: 13px;
+  height: 9px;
+  background-position: -103px -30px;
 }
 
 @font-face {
@@ -1495,9 +1517,9 @@ html, body {
   width: 25px;
   height: 25px;
   background-color: black;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
   position: relative;
 }
 
@@ -1573,9 +1595,9 @@ html, body {
 .header-bottom-search__text {
   background-color: #fbfbfb;
   border: 1px solid #dee1e4;
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px !important;
+  -moz-border-radius: 4px 0 0 4px !important;
+  border-radius: 4px 0 0 4px !important;
   width: 274px;
   height: 32px;
   font-family: OpenSansLight;
@@ -1592,9 +1614,9 @@ html, body {
   border: none;
   font-family: OpenSansSemibold;
   font-size: 16px;
-  -webkit-border-radius: 0 4px 4px 0;
-  -moz-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0 !important;
+  -moz-border-radius: 0 4px 4px 0 !important;
+  border-radius: 0 4px 4px 0 !important;
   margin-left: -6px;
 }
 
@@ -1825,9 +1847,9 @@ html, body {
   width: 44px;
   height: 44px;
   font-size: 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
   background-color: white;
 }
 /* line 51, ../../sass/common/footer.scss */

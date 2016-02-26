@@ -46,20 +46,22 @@ var application = function () {
 
             //задаём стиль для select
     var setSelectStyle = function () {
-        $('#content-header__select').select2({ theme: "classic", allowClear: false });
+        $('#content-header__select').select2(
+            { minimumResultsForSearch: Infinity }
+        );
     };
             //делаем колонки для важной информации
     var columnizerInit = function () {
-      //  $('#important__text').columnize();
-       // $('.important__text').columnize({ width: 300 });
-    //   $('#important__text').columnize({ columns: 2 });
-            //        target: '.columnizer-style'});
+        if (!Modernizr.csscolumns) { //не поддерживается многоколоночность
+            $('#important__text').columnize({ columns: 2 });
+        }//else  {console.log('Есть многоколоночность!')}
     };
 
         //нажатие на заголовок сайдбара - показ-скрытие раздела ("аккордеон")
     var toggleItemShow = function (){
         $(this).toggleClass('down'); //добавление/отмена класса для себя
         $(this).siblings('.sidebar__item-block').toggleClass('hide');// и для соседнего блока
+       // $(this).siblings('.sidebar__item-block').fadeToggle();
     };
 
         //при нажатии переключаем класс checked для элемента, для соседнего инпут переключаем атрибут
@@ -124,19 +126,28 @@ $(document).ready(function (){
     application.init();
 });
 
-//$(document).ready((function() {
-//        $( "#sidebar__item-price-ui-slider" ).slider({
-//            range: true,
-//            min: 0,
-//            max: 500,
-//            values: [ 75, 300 ],
-//            slide: function( event, ui ) {
-//                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-//            }
-//        });
-//        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-//            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-//    })
-//);
+$(document).ready((function() {
+        var textStart = $('#price-text-start'),
+            textFinish = $('#price-text-finish'),
+            startRange = parseInt($(textStart).attr('data-range'),10),
+            finishRange = parseInt($(textFinish).attr('data-range'),10),
+            startUser = parseInt($(textStart).attr('data-user'),10),
+            finishUser = parseInt($(textFinish).attr('data-user'),10);
+//        console.log(startRange,finishRange,startUser,finishUser);
+        $( "#slider" ).slider({
+            range: true,
+            min: startRange,
+            max: finishRange,
+            values: [ startUser,
+                      finishUser ],
+            slide: function( event, ui ) {
+                 // console.log(ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+                $(textStart).val(ui.values[ 0 ]);
+                $(textFinish).val(ui.values[ 1 ]);
+            }
+        });
+    })
+);
+
 
 

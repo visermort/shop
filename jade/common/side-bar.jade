@@ -47,12 +47,10 @@
                 p.sidebar__item-header Цена
                 .sidebar__item-block
                     label(for="price-text-start").sidebar__item-price_label.label-start от
-                    input(type="text",id="price-text-start",name="price-text-start",placeholder="100").sidebar__item-price-input.price_start
+                    input(type="text",id="price-text-start",name="price-text-start",placeholder="999",data-range="100",data-user="999").sidebar__item-price-input.price_start
                     label(for="price-text-finish").sidebar__item-price_label.label-finish до
-                    input(type="text",id="price-text-finish",name="price-text-finish",placeholder="13 000").sidebar__item-price-input.price_from
-                    .sidebar__item-price-slider
-                        p.sidebar__item-price-slider-inner цена
-                    .sidebar__item-price-ui-slider(id="sidebar__item-price-ui-slider")
+                    input(type="text",id="price-text-finish",name="price-text-finish",placeholder="13000",data-range="25000",data-user="13000").sidebar__item-price-input.price_from
+                    .sidebar__item-price-ui-slider(id="slider")
             li.sidebar__item-colors.sidebar-item
                 p.sidebar__item-header Цвет
                 .sidebar__item-block
@@ -60,6 +58,7 @@
                         each item,key in colors
                             li.sidebar__item-colors-item
                                 //.input(type="button", name="button-color", class="button-#{item} #{item=='gray' ? 'active' : ''} ", value=item).sidebar__item-colors_button= item
+
                                 .sidebar__item-colors_button(class="button-#{item} #{item == 'gray' ? 'active' : ''} ")= item
             li.sidebar__item-platform.sidebar-item
                 p.sidebar__item-header Операционные системы
@@ -71,4 +70,5 @@
                                 checked="#{(key=='android') || (key=='ios') || (key=='windows-mobile') ? 'checked' : '' }").sidebar__item-input-checkbox= item
                                 label(for="sidebar__item-platform_#{key}",class="#{key=='android' || key=='ios' || key=='windows-mobile' ? 'checked' : '' }").sidebar__item-label-checkbox= item
                     p.sidebar__item-bottom Сбросить фильтр
+
 

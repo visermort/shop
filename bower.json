@@ -18,7 +18,8 @@
   ],
   "dependencies": {
     "modernizr": "2.8.3",
-    "jquery": "~1.8.0"
+    "jquery": "~1.8.0",
+    "jquery-ui": "~1.11.4"
   },
   "devDependencies": {
     "select2": "~4.0.1"

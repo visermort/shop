@@ -171,14 +171,43 @@ $ccolors : (button-white: white,button-gray: gray,button-black: black, button-da
   border-top: 3px solid $color-orange;
 }
 
+
+//слайдер
+.ui-slider-horizontal {
+  margin: 4px $padding-left 30px $padding-left;
+  height: 3px;
+  border: none;
+  background: $color-border;
+  * {
+    outline: none !important;
+  }
+}
+.ui-slider-range {
+  height: 3px;
+  background: $color-orange;
+  border: none;
+}
+.ui-slider .ui-slider-handle {
+  width: 8px;
+  height: 18px;
+  background: url(../images/spritesheet.png) no-repeat;
+  background-position: -126px -122px;
+  cursor: pointer;
+  top: 3px;
+  margin-left: -4px;//сдвинуть чуть-чуть, т.к. left-не работает
+  border: none;//очень важно
+}
+
+
 .sidebar__item-colors-list {
-  padding: 0 $padding-left 0 $padding-left;
+  padding: 0 $padding-left  $padding-left;
 }
 .sidebar__item-colors-item {
   display: inline-block;
   padding: 0;
   margin: 0 17px 21px 0;
 }
+
 
 
 
