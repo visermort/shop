@@ -1,0 +1,78 @@
+//@import 'common/_normalize';
+
+@import 'common/mixins';
+@import 'common/adjastment';
+@import 'common/spritesheets';
+@import 'common/fonts';
+
+$mainwidth: 1256px;
+$mainwidthnew: 1100px;
+$maincolor: #f4f4f4;
+$topcolor: #ffffff;
+$color-input: #fbfbfb;
+$color-orange: #ff6707;
+$marginmain: 78px;
+$textcolor: #333333;
+$color_sidebartop: #d9e5ea;
+$color-nav-hover: #e4e2e2;
+$color-border: #dee1e4;
+$color-link: #5db2fc;
+$color-input-sidebar: #ffffff;
+$boxshadow: #ebedef;
+$color-article-top: #e4ebee;
+$color-article-top-font: #5d656c;
+$color-article-top-input-font: #7f7f7f;
+$color-table-2x1: #ebebeb;
+$color-article-item-name: #010101;
+$logo-font-size: 40px;
+
+
+html, body {
+ // background-color: #282828;
+  background-color: #f4f4f4;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: $maincolor;
+}
+.footer {
+  width: 100%;
+}
+
+.header-top,
+.header-bottom,
+.nav-container,
+.breadcrumbs,
+.maintittle,
+.mainarticle,
+.footer-top,
+.footer-bottom {
+  width: $mainwidthnew;
+}
+.header-top ,
+.header-bottom,
+.nav-container,
+.breadcrumbs,
+.maintittle,
+.mainarticle,
+.footer-top,
+.footer-bottom {
+  margin: 0 auto;//$marginmain;
+}
+
+
+
+
+
+@import 'common/header';
+
+@import 'common/footer';
+
+
+
+
+
+
+
+

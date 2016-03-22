@@ -1,0 +1,33 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+//* {
+//  box-sizing: border-box;
+//}
+
+* {
+  outline: none !important; //чтобы не было синей рамки при выделении
+}
+
+$footerheight: 220px;
+
+.wrapper {
+  min-height:  100%;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper-empty {
+  height: $footerheight;
+}
+.footer {
+  margin-top: -$footerheight;
+  height: $footerheight;
+  position:relative;
+}

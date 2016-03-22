@@ -1,0 +1,470 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arrow-combo-name: 'arrow-combo';
+$arrow-combo-x: 112px;
+$arrow-combo-y: 291px;
+$arrow-combo-offset-x: -112px;
+$arrow-combo-offset-y: -291px;
+$arrow-combo-width: 13px;
+$arrow-combo-height: 9px;
+$arrow-combo-total-width: 308px;
+$arrow-combo-total-height: 303px;
+$arrow-combo-image: '../images/spritesmith.png';
+$arrow-combo: (112px, 291px, -112px, -291px, 13px, 9px, 308px, 303px, '../images/spritesmith.png', 'arrow-combo', );
+$arrow-down-name: 'arrow-down';
+$arrow-down-x: 56px;
+$arrow-down-y: 236px;
+$arrow-down-offset-x: -56px;
+$arrow-down-offset-y: -236px;
+$arrow-down-width: 18px;
+$arrow-down-height: 11px;
+$arrow-down-total-width: 308px;
+$arrow-down-total-height: 303px;
+$arrow-down-image: '../images/spritesmith.png';
+$arrow-down: (56px, 236px, -56px, -236px, 18px, 11px, 308px, 303px, '../images/spritesmith.png', 'arrow-down', );
+$arrow-left-name: 'arrow-left';
+$arrow-left-x: 211px;
+$arrow-left-y: 291px;
+$arrow-left-offset-x: -211px;
+$arrow-left-offset-y: -291px;
+$arrow-left-width: 6px;
+$arrow-left-height: 9px;
+$arrow-left-total-width: 308px;
+$arrow-left-total-height: 303px;
+$arrow-left-image: '../images/spritesmith.png';
+$arrow-left: (211px, 291px, -211px, -291px, 6px, 9px, 308px, 303px, '../images/spritesmith.png', 'arrow-left', );
+$arrow-right-name: 'arrow-right';
+$arrow-right-x: 165px;
+$arrow-right-y: 291px;
+$arrow-right-offset-x: -165px;
+$arrow-right-offset-y: -291px;
+$arrow-right-width: 6px;
+$arrow-right-height: 9px;
+$arrow-right-total-width: 308px;
+$arrow-right-total-height: 303px;
+$arrow-right-image: '../images/spritesmith.png';
+$arrow-right: (165px, 291px, -165px, -291px, 6px, 9px, 308px, 303px, '../images/spritesmith.png', 'arrow-right', );
+$arrow-up-name: 'arrow-up';
+$arrow-up-x: 114px;
+$arrow-up-y: 236px;
+$arrow-up-offset-x: -114px;
+$arrow-up-offset-y: -236px;
+$arrow-up-width: 18px;
+$arrow-up-height: 11px;
+$arrow-up-total-width: 308px;
+$arrow-up-total-height: 303px;
+$arrow-up-image: '../images/spritesmith.png';
+$arrow-up: (114px, 236px, -114px, -236px, 18px, 11px, 308px, 303px, '../images/spritesmith.png', 'arrow-up', );
+$checkbox-checked-name: 'checkbox-checked';
+$checkbox-checked-x: 130px;
+$checkbox-checked-y: 0px;
+$checkbox-checked-offset-x: -130px;
+$checkbox-checked-offset-y: 0px;
+$checkbox-checked-width: 19px;
+$checkbox-checked-height: 19px;
+$checkbox-checked-total-width: 308px;
+$checkbox-checked-total-height: 303px;
+$checkbox-checked-image: '../images/spritesmith.png';
+$checkbox-checked: (130px, 0px, -130px, 0px, 19px, 19px, 308px, 303px, '../images/spritesmith.png', 'checkbox-checked', );
+$checkbox-hover-name: 'checkbox-hover';
+$checkbox-hover-x: 0px;
+$checkbox-hover-y: 121px;
+$checkbox-hover-offset-x: 0px;
+$checkbox-hover-offset-y: -121px;
+$checkbox-hover-width: 19px;
+$checkbox-hover-height: 19px;
+$checkbox-hover-total-width: 308px;
+$checkbox-hover-total-height: 303px;
+$checkbox-hover-image: '../images/spritesmith.png';
+$checkbox-hover: (0px, 121px, 0px, -121px, 19px, 19px, 308px, 303px, '../images/spritesmith.png', 'checkbox-hover', );
+$checkbox-name: 'checkbox';
+$checkbox-x: 61px;
+$checkbox-y: 61px;
+$checkbox-offset-x: -61px;
+$checkbox-offset-y: -61px;
+$checkbox-width: 19px;
+$checkbox-height: 19px;
+$checkbox-total-width: 308px;
+$checkbox-total-height: 303px;
+$checkbox-image: '../images/spritesmith.png';
+$checkbox: (61px, 61px, -61px, -61px, 19px, 19px, 308px, 303px, '../images/spritesmith.png', 'checkbox', );
+$combo-down-name: 'combo-down';
+$combo-down-x: 225px;
+$combo-down-y: 236px;
+$combo-down-offset-x: -225px;
+$combo-down-offset-y: -236px;
+$combo-down-width: 13px;
+$combo-down-height: 9px;
+$combo-down-total-width: 308px;
+$combo-down-total-height: 303px;
+$combo-down-image: '../images/spritesmith.png';
+$combo-down: (225px, 236px, -225px, -236px, 13px, 9px, 308px, 303px, '../images/spritesmith.png', 'combo-down', );
+$combo-up-name: 'combo-up';
+$combo-up-x: 172px;
+$combo-up-y: 236px;
+$combo-up-offset-x: -172px;
+$combo-up-offset-y: -236px;
+$combo-up-width: 13px;
+$combo-up-height: 9px;
+$combo-up-total-width: 308px;
+$combo-up-total-height: 303px;
+$combo-up-image: '../images/spritesmith.png';
+$combo-up: (172px, 236px, -172px, -236px, 13px, 9px, 308px, 303px, '../images/spritesmith.png', 'combo-up', );
+$facebook-bottom-hover-name: 'facebook-bottom-hover';
+$facebook-bottom-hover-x: 245px;
+$facebook-bottom-hover-y: 61px;
+$facebook-bottom-hover-offset-x: -245px;
+$facebook-bottom-hover-offset-y: -61px;
+$facebook-bottom-hover-width: 11px;
+$facebook-bottom-hover-height: 21px;
+$facebook-bottom-hover-total-width: 308px;
+$facebook-bottom-hover-total-height: 303px;
+$facebook-bottom-hover-image: '../images/spritesmith.png';
+$facebook-bottom-hover: (245px, 61px, -245px, -61px, 11px, 21px, 308px, 303px, '../images/spritesmith.png', 'facebook-bottom-hover', );
+$facebook-bottom-name: 'facebook-bottom';
+$facebook-bottom-x: 245px;
+$facebook-bottom-y: 0px;
+$facebook-bottom-offset-x: -245px;
+$facebook-bottom-offset-y: 0px;
+$facebook-bottom-width: 11px;
+$facebook-bottom-height: 21px;
+$facebook-bottom-total-width: 308px;
+$facebook-bottom-total-height: 303px;
+$facebook-bottom-image: '../images/spritesmith.png';
+$facebook-bottom: (245px, 0px, -245px, 0px, 11px, 21px, 308px, 303px, '../images/spritesmith.png', 'facebook-bottom', );
+$facebook-top-hover-name: 'facebook-top-hover';
+$facebook-top-hover-x: 245px;
+$facebook-top-hover-y: 174px;
+$facebook-top-hover-offset-x: -245px;
+$facebook-top-hover-offset-y: -174px;
+$facebook-top-hover-width: 6px;
+$facebook-top-hover-height: 12px;
+$facebook-top-hover-total-width: 308px;
+$facebook-top-hover-total-height: 303px;
+$facebook-top-hover-image: '../images/spritesmith.png';
+$facebook-top-hover: (245px, 174px, -245px, -174px, 6px, 12px, 308px, 303px, '../images/spritesmith.png', 'facebook-top-hover', );
+$facebook-top-name: 'facebook-top';
+$facebook-top-x: 245px;
+$facebook-top-y: 122px;
+$facebook-top-offset-x: -245px;
+$facebook-top-offset-y: -122px;
+$facebook-top-width: 6px;
+$facebook-top-height: 12px;
+$facebook-top-total-width: 308px;
+$facebook-top-total-height: 303px;
+$facebook-top-image: '../images/spritesmith.png';
+$facebook-top: (245px, 122px, -245px, -122px, 6px, 12px, 308px, 303px, '../images/spritesmith.png', 'facebook-top', );
+$map-name: 'map';
+$map-x: 296px;
+$map-y: 56px;
+$map-offset-x: -296px;
+$map-offset-y: -56px;
+$map-width: 12px;
+$map-height: 16px;
+$map-total-width: 308px;
+$map-total-height: 303px;
+$map-image: '../images/spritesmith.png';
+$map: (296px, 56px, -296px, -56px, 12px, 16px, 308px, 303px, '../images/spritesmith.png', 'map', );
+$phone-name: 'phone';
+$phone-x: 296px;
+$phone-y: 0px;
+$phone-offset-x: -296px;
+$phone-offset-y: 0px;
+$phone-width: 12px;
+$phone-height: 16px;
+$phone-total-width: 308px;
+$phone-total-height: 303px;
+$phone-image: '../images/spritesmith.png';
+$phone: (296px, 0px, -296px, 0px, 12px, 16px, 308px, 303px, '../images/spritesmith.png', 'phone', );
+$radio-checked-name: 'radio-checked';
+$radio-checked-x: 59px;
+$radio-checked-y: 121px;
+$radio-checked-offset-x: -59px;
+$radio-checked-offset-y: -121px;
+$radio-checked-width: 19px;
+$radio-checked-height: 19px;
+$radio-checked-total-width: 308px;
+$radio-checked-total-height: 303px;
+$radio-checked-image: '../images/spritesmith.png';
+$radio-checked: (59px, 121px, -59px, -121px, 19px, 19px, 308px, 303px, '../images/spritesmith.png', 'radio-checked', );
+$radio-high-name: 'radio-high';
+$radio-high-x: 0px;
+$radio-high-y: 236px;
+$radio-high-offset-x: 0px;
+$radio-high-offset-y: -236px;
+$radio-high-width: 16px;
+$radio-high-height: 15px;
+$radio-high-total-width: 308px;
+$radio-high-total-height: 303px;
+$radio-high-image: '../images/spritesmith.png';
+$radio-high: (0px, 236px, 0px, -236px, 16px, 15px, 308px, 303px, '../images/spritesmith.png', 'radio-high', );
+$radio-name: 'radio';
+$radio-x: 130px;
+$radio-y: 59px;
+$radio-offset-x: -130px;
+$radio-offset-y: -59px;
+$radio-width: 19px;
+$radio-height: 19px;
+$radio-total-width: 308px;
+$radio-total-height: 303px;
+$radio-image: '../images/spritesmith.png';
+$radio: (130px, 59px, -130px, -59px, 19px, 19px, 308px, 303px, '../images/spritesmith.png', 'radio', );
+$ratio-name: 'ratio';
+$ratio-x: 0px;
+$ratio-y: 61px;
+$ratio-offset-x: 0px;
+$ratio-offset-y: -61px;
+$ratio-width: 21px;
+$ratio-height: 20px;
+$ratio-total-width: 308px;
+$ratio-total-height: 303px;
+$ratio-image: '../images/spritesmith.png';
+$ratio: (0px, 61px, 0px, -61px, 21px, 20px, 308px, 303px, '../images/spritesmith.png', 'ratio', );
+$slider-name: 'slider';
+$slider-x: 296px;
+$slider-y: 216px;
+$slider-offset-x: -296px;
+$slider-offset-y: -216px;
+$slider-width: 8px;
+$slider-height: 14px;
+$slider-total-width: 308px;
+$slider-total-height: 303px;
+$slider-image: '../images/spritesmith.png';
+$slider: (296px, 216px, -296px, -216px, 8px, 14px, 308px, 303px, '../images/spritesmith.png', 'slider', );
+$twitter-bottom-hover-name: 'twitter-bottom-hover';
+$twitter-bottom-hover-x: 0px;
+$twitter-bottom-hover-y: 0px;
+$twitter-bottom-hover-offset-x: 0px;
+$twitter-bottom-hover-offset-y: 0px;
+$twitter-bottom-hover-width: 25px;
+$twitter-bottom-hover-height: 21px;
+$twitter-bottom-hover-total-width: 308px;
+$twitter-bottom-hover-total-height: 303px;
+$twitter-bottom-hover-image: '../images/spritesmith.png';
+$twitter-bottom-hover: (0px, 0px, 0px, 0px, 25px, 21px, 308px, 303px, '../images/spritesmith.png', 'twitter-bottom-hover', );
+$twitter-bottom-name: 'twitter-bottom';
+$twitter-bottom-x: 65px;
+$twitter-bottom-y: 0px;
+$twitter-bottom-offset-x: -65px;
+$twitter-bottom-offset-y: 0px;
+$twitter-bottom-width: 25px;
+$twitter-bottom-height: 21px;
+$twitter-bottom-total-width: 308px;
+$twitter-bottom-total-height: 303px;
+$twitter-bottom-image: '../images/spritesmith.png';
+$twitter-bottom: (65px, 0px, -65px, 0px, 25px, 21px, 308px, 303px, '../images/spritesmith.png', 'twitter-bottom', );
+$twitter-top-hover-name: 'twitter-top-hover';
+$twitter-top-hover-x: 0px;
+$twitter-top-hover-y: 291px;
+$twitter-top-hover-offset-x: 0px;
+$twitter-top-hover-offset-y: -291px;
+$twitter-top-hover-width: 16px;
+$twitter-top-hover-height: 12px;
+$twitter-top-hover-total-width: 308px;
+$twitter-top-hover-total-height: 303px;
+$twitter-top-hover-image: '../images/spritesmith.png';
+$twitter-top-hover: (0px, 291px, 0px, -291px, 16px, 12px, 308px, 303px, '../images/spritesmith.png', 'twitter-top-hover', );
+$twitter-top-name: 'twitter-top';
+$twitter-top-x: 56px;
+$twitter-top-y: 291px;
+$twitter-top-offset-x: -56px;
+$twitter-top-offset-y: -291px;
+$twitter-top-width: 16px;
+$twitter-top-height: 12px;
+$twitter-top-total-width: 308px;
+$twitter-top-total-height: 303px;
+$twitter-top-image: '../images/spritesmith.png';
+$twitter-top: (56px, 291px, -56px, -291px, 16px, 12px, 308px, 303px, '../images/spritesmith.png', 'twitter-top', );
+$view-lis-hight-name: 'view-lis-hight';
+$view-lis-hight-x: 56px;
+$view-lis-hight-y: 180px;
+$view-lis-hight-offset-x: -56px;
+$view-lis-hight-offset-y: -180px;
+$view-lis-hight-width: 16px;
+$view-lis-hight-height: 16px;
+$view-lis-hight-total-width: 308px;
+$view-lis-hight-total-height: 303px;
+$view-lis-hight-image: '../images/spritesmith.png';
+$view-lis-hight: (56px, 180px, -56px, -180px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-lis-hight', );
+$view-list-2-name: 'view-list-2';
+$view-list-2-x: 118px;
+$view-list-2-y: 121px;
+$view-list-2-offset-x: -118px;
+$view-list-2-offset-y: -121px;
+$view-list-2-width: 16px;
+$view-list-2-height: 16px;
+$view-list-2-total-width: 308px;
+$view-list-2-total-height: 303px;
+$view-list-2-image: '../images/spritesmith.png';
+$view-list-2: (118px, 121px, -118px, -121px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-list-2', );
+$view-list-high-name: 'view-list-high';
+$view-list-high-x: 168px;
+$view-list-high-y: 180px;
+$view-list-high-offset-x: -168px;
+$view-list-high-offset-y: -180px;
+$view-list-high-width: 16px;
+$view-list-high-height: 16px;
+$view-list-high-total-width: 308px;
+$view-list-high-total-height: 303px;
+$view-list-high-image: '../images/spritesmith.png';
+$view-list-high: (168px, 180px, -168px, -180px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-list-high', );
+$view-list-name: 'view-list';
+$view-list-x: 112px;
+$view-list-y: 180px;
+$view-list-offset-x: -112px;
+$view-list-offset-y: -180px;
+$view-list-width: 16px;
+$view-list-height: 16px;
+$view-list-total-width: 308px;
+$view-list-total-height: 303px;
+$view-list-image: '../images/spritesmith.png';
+$view-list: (112px, 180px, -112px, -180px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-list', );
+$view-thumbnail-high-name: 'view-thumbnail-high';
+$view-thumbnail-high-x: 189px;
+$view-thumbnail-high-y: 122px;
+$view-thumbnail-high-offset-x: -189px;
+$view-thumbnail-high-offset-y: -122px;
+$view-thumbnail-high-width: 16px;
+$view-thumbnail-high-height: 16px;
+$view-thumbnail-high-total-width: 308px;
+$view-thumbnail-high-total-height: 303px;
+$view-thumbnail-high-image: '../images/spritesmith.png';
+$view-thumbnail-high: (189px, 122px, -189px, -122px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-thumbnail-high', );
+$view-thumbnail-name: 'view-thumbnail';
+$view-thumbnail-x: 0px;
+$view-thumbnail-y: 180px;
+$view-thumbnail-offset-x: 0px;
+$view-thumbnail-offset-y: -180px;
+$view-thumbnail-width: 16px;
+$view-thumbnail-height: 16px;
+$view-thumbnail-total-width: 308px;
+$view-thumbnail-total-height: 303px;
+$view-thumbnail-image: '../images/spritesmith.png';
+$view-thumbnail: (0px, 180px, 0px, -180px, 16px, 16px, 308px, 303px, '../images/spritesmith.png', 'view-thumbnail', );
+$vk-bottom-hover-name: 'vk-bottom-hover';
+$vk-bottom-hover-x: 189px;
+$vk-bottom-hover-y: 0px;
+$vk-bottom-hover-offset-x: -189px;
+$vk-bottom-hover-offset-y: 0px;
+$vk-bottom-hover-width: 16px;
+$vk-bottom-hover-height: 21px;
+$vk-bottom-hover-total-width: 308px;
+$vk-bottom-hover-total-height: 303px;
+$vk-bottom-hover-image: '../images/spritesmith.png';
+$vk-bottom-hover: (189px, 0px, -189px, 0px, 16px, 21px, 308px, 303px, '../images/spritesmith.png', 'vk-bottom-hover', );
+$vk-bottom-name: 'vk-bottom';
+$vk-bottom-x: 189px;
+$vk-bottom-y: 61px;
+$vk-bottom-offset-x: -189px;
+$vk-bottom-offset-y: -61px;
+$vk-bottom-width: 16px;
+$vk-bottom-height: 21px;
+$vk-bottom-total-width: 308px;
+$vk-bottom-total-height: 303px;
+$vk-bottom-image: '../images/spritesmith.png';
+$vk-bottom: (189px, 61px, -189px, -61px, 16px, 21px, 308px, 303px, '../images/spritesmith.png', 'vk-bottom', );
+$vk-top-hover-name: 'vk-top-hover';
+$vk-top-hover-x: 296px;
+$vk-top-hover-y: 164px;
+$vk-top-hover-offset-x: -296px;
+$vk-top-hover-offset-y: -164px;
+$vk-top-hover-width: 10px;
+$vk-top-hover-height: 12px;
+$vk-top-hover-total-width: 308px;
+$vk-top-hover-total-height: 303px;
+$vk-top-hover-image: '../images/spritesmith.png';
+$vk-top-hover: (296px, 164px, -296px, -164px, 10px, 12px, 308px, 303px, '../images/spritesmith.png', 'vk-top-hover', );
+$vk-top-name: 'vk-top';
+$vk-top-x: 296px;
+$vk-top-y: 112px;
+$vk-top-offset-x: -296px;
+$vk-top-offset-y: -112px;
+$vk-top-width: 10px;
+$vk-top-height: 12px;
+$vk-top-total-width: 308px;
+$vk-top-total-height: 303px;
+$vk-top-image: '../images/spritesmith.png';
+$vk-top: (296px, 112px, -296px, -112px, 10px, 12px, 308px, 303px, '../images/spritesmith.png', 'vk-top', );
+$spritesheet-width: 308px;
+$spritesheet-height: 303px;
+$spritesheet-image: '../images/spritesmith.png';
+$spritesheet-sprites: ($arrow-combo, $arrow-down, $arrow-left, $arrow-right, $arrow-up, $checkbox-checked, $checkbox-hover, $checkbox, $combo-down, $combo-up, $facebook-bottom-hover, $facebook-bottom, $facebook-top-hover, $facebook-top, $map, $phone, $radio-checked, $radio-high, $radio, $ratio, $slider, $twitter-bottom-hover, $twitter-bottom, $twitter-top-hover, $twitter-top, $view-lis-hight, $view-list-2, $view-list-high, $view-list, $view-thumbnail-high, $view-thumbnail, $vk-bottom-hover, $vk-bottom, $vk-top-hover, $vk-top, );
+$spritesheet: (308px, 303px, '../images/spritesmith.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

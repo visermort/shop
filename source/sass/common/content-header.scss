@@ -1,0 +1,109 @@
+.content-top {
+  @include clearfix;
+}
+
+.content-header {
+  background-color: $color-article-top;
+  @include clearfix;
+  @include border-radius (6px);
+  color: $color-article-top-font;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  border: 1px solid $color-border;
+  margin-bottom: 22px;
+  &__form-left {
+    position: relative;
+    margin-top: 10px;  }
+  &__left {
+    float: left;
+  }
+  &__label-select {
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 6px;
+  }
+  &__right {
+    float: right;
+  }
+  &__item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: -4px;
+    border-left: 1px solid $color-border;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-nav-hover;
+    }
+  }
+  &__list {
+    float: right;
+    margin-right: 6px;
+    margin-bottom: -5px;
+  }
+}
+
+//для select2 стили
+.select2-container {
+  font-size: 13px;
+  width: 143px !important;
+  //-webkit-appearance: none !important;
+  //-moz-appearance: none !important;
+  //-ms-appearance: none !important;
+  //appearance: none!important;
+  & .select2-selection__arrow {
+    @include sprite($combo-down);
+    top: 10px !important;
+    right: 0 !important;
+  }
+  &.select2-container--open { //открыто
+    & .select2-selection__arrow {
+      @include sprite($combo-up);
+      top: 10px !important;
+      right: 7px !important;
+    }
+    .select2-selection__rendered {
+      font-size: 13px;
+    }
+  }
+
+}
+
+.select2-container--default,
+.select2-selection--single,
+.select2-selection__rendered {
+  line-height: 24px !important;
+}
+
+
+.select2-dropdown {
+  margin-top: 2px !important;
+  top: 0 !important;
+  @include border-radius(3px);
+  @include box-shadow-all(1px, 0, 5px, 1px, 197, 197, 197, 0.7);
+  background-color: #ffffff !important;
+  .select2-results__option {
+    background-color: #ffffff !important;
+    font-size: 13px !important;
+    font-family: OpenSansLight !important;
+    color: #7f7f7f !important;
+    &--highlighted {
+      color: #333333 !important;
+      font-family: OpenSansSemibold !important;
+      font-size: 14px !important;
+      background-color: #ffffff !important;
+    }
+  }
+}
+
+.select2-selection__arrow b { //родная стрелка - убираем
+  display: none;
+}
+
+
+
+.content-header__right-paragraph {
+  float: left;
+  margin-right: 17px;
+}

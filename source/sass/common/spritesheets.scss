@@ -1,0 +1,161 @@
+@import 'spritesmith';
+
+
+//social links top
+.header-top-social__link-fb {
+  @include sprite($facebook-top);
+  &:hover {
+    @include sprite($facebook-top-hover);
+  }
+}
+.header-top-social__link-vk {
+  @include sprite($vk-top);
+  &:hover {
+    @include sprite($vk-top-hover);
+  }
+}
+
+.header-top-social__link-tw {
+  @include sprite($twitter-top);
+  &:hover {
+    @include sprite($twitter-top-hover);
+  }
+}
+
+
+//phone and adress
+.header-top__phone-link:before {
+  @include before-after;
+  @include sprite($phone);
+  left: -21px;
+  top: 6px;
+}
+.header-top__adress-paragraph:before {
+  @include before-after;
+  @include sprite($map);
+  left: -21px;
+  top: 3px;
+}
+
+
+//radio checkbox
+
+.sidebar__item-presence_label:before,
+.sidebar__item-label-checkbox:before{
+  top: 0;
+  left: 0;
+  @include before-after;
+}
+//радио - два состояния
+.sidebar__item-presence_label:before {
+  @include sprite($radio);
+}
+.sidebar__item-presence_label.checked:before {
+  @include sprite($radio-checked);
+}
+//checkbox - три состояния
+.sidebar__item-label-checkbox:before {
+  @include sprite($checkbox);
+}
+.sidebar__item-label-checkbox.checked:before {
+  @include sprite($checkbox-checked);
+}
+.sidebar__item-label-checkbox.hover:before { //class hover будем добавлять в Js
+  @include sprite($checkbox-hover);
+}
+
+
+//socials  - bottom
+
+.footer-right__social-link {
+  @include before-after;
+  top: 10px;
+  &.fb {
+    @include sprite($facebook-bottom);
+    left: 16px;
+    &:hover {
+      @include sprite($facebook-bottom-hover);
+    }
+  }
+  &.vk {
+    @include sprite($vk-bottom);
+    left: 13px;
+    &:hover {
+      @include sprite($vk-bottom-hover);
+    }
+  }
+  &.tw {
+    @include sprite($twitter-bottom);
+    left: 9px;
+    &:hover {
+      @include sprite($twitter-bottom-hover);
+    }
+  }
+}
+
+
+//кнопки прокрутки содержимого - вперёд-назад
+.content-footer__sel-left:after,
+.content-footer__sel-right:after {
+  @include before-after;
+  top: 7px;
+  left: 8px;
+}
+.content-footer__sel-left:after  {
+  @include sprite($arrow-left);
+}
+.content-footer__sel-right:after {
+  @include sprite($arrow-right);
+}
+
+
+//рейтинг содержимого
+.content-main-item__ratio-item {
+  @include sprite($ratio);
+  &.active {
+    @include sprite($radio-high);
+  }
+}
+
+
+//кнопки выбора отображения содержимого
+.content-header__item:before {
+  @include before-after;
+  top: 16px;
+  left: 16px;
+}
+.content-header__item-info:before {
+  @include sprite($view-list-2);
+}
+.content-header__item-thumbs:before {
+  @include sprite($view-thumbnail);
+}
+.content-header__item-list:before {
+  @include sprite($view-list);
+}
+
+.content-header__item-info.active:before {
+  @include sprite($view-list-high);
+}
+.content-header__item-thumbs.active:before {
+  @include sprite($view-thumbnail-high);
+}
+.content-header__item-list.active:before {
+  @include sprite($view-lis-hight);
+}
+
+//сайдбар заголовок фильтра - стрелочка вверх
+.sidebar__item-header:after {
+
+  @include before-after;
+  @include sprite($arrow-up);
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+//если добавили класс то картинка другая
+.sidebar__item-header.down:after {
+  @include sprite($arrow-down);
+}
+
+

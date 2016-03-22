@@ -1,0 +1,23 @@
+footer.footer
+    .footer-top
+        .container
+            .footer-logo
+                a(href="/").footer-logo__link
+                    img.header-bottom-logo__image(src="images/coltech-white.png",alt="coltech")
+            .footer-right
+                .footer-right__top
+                    ul.footer-right__social-list
+                        each value,key in socials
+                            li.footer-right__social-item
+                                a(href=value,class=key).footer-right__social-link= key
+                ul.footer-right__select-list
+                    each value,key in topselect
+                        li.footer-right__select-item
+                            a(href="#" class="#{key == 0 ? 'acitve' : '' }").footer-right__select-link= value
+    .footer-bottom
+        .container
+            p.footer-bottom__copyright All rights reserved. 2015. no copy alowed
+script(type="text/javascript",src="js/vendor.min%=version=%.js")
+script(type="text/javascript",src="js/index%=suffix=%%=version=%.js")
+
+

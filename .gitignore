@@ -1,8 +1,9 @@
 node_modules
-app/bower
-app/css/common
-app/common
+bower
+app
 .idea
 .sass-cache
-
+index.html
+External Libraries
+MIT.LICENSE
 
